@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "مطبخ ألمنيوم عصري",
+    "category": "aluminum",
+    "image": "/image/Aluminum kitchens/Aluminum kitchens (1).jpeg"
+  },
+  {
+    "id": 2,
+    "title": "مطبخ خشبي فاخر",
+    "category": "wooden",
+    "image": "/image/Wooden kitchens/Wooden kitchens (1).jpeg"
+  },
+  {
+    "id": 3,
+    "title": "مطبخ ألمنيوم كلاسيكي",
+    "category": "aluminum",
+    "image": "/image/Aluminum kitchens/Aluminum kitchens (2).jpeg"
+  },
+  {
+    "id": 4,
+    "title": "مطبخ خشبي عصري",
+    "category": "wooden",
+    "image": "/image/Wooden kitchens/Wooden kitchens (2).jpeg"
+  },
+  {
+    "id": 5,
+    "title": "مطبخ ألمنيوم فاخر",
+    "category": "aluminum",
+    "image": "/image/Aluminum kitchens/Aluminum kitchens (3).jpeg"
+  },
+  {
+    "id": 6,
+    "title": "مطبخ خشبي راقي",
+    "category": "wooden",
+    "image": "/image/Wooden kitchens/Wooden kitchens (3).jpeg"
+  },
+  {
+    "id": 7,
+    "title": "تشطيب داخلي متكامل",
+    "category": "interior",
+    "image": "/image/Some pictures of kitchens/Some pictures of kitchens (1).jpeg"
+  },
+  {
+    "id": 8,
+    "title": "مطبخ ألمنيوم مودرن",
+    "category": "aluminum",
+    "image": "/image/Aluminum kitchens/Aluminum kitchens (4).jpeg"
+  },
+  {
+    "id": 9,
+    "title": "مطبخ خشبي أنيق",
+    "category": "wooden",
+    "image": "/image/Wooden kitchens/Wooden kitchens (4).jpeg"
+  }
+]
+

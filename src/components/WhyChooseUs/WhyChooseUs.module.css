@@ -1,0 +1,227 @@
+.whyChooseUs {
+  padding: 5rem 0;
+  background-color: #ffffff;
+  color: #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+.whyChooseUs::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(
+    135deg,
+    rgba(212, 175, 55, 0.03) 0%,
+    rgba(212, 175, 55, 0.08) 50%,
+    rgba(212, 175, 55, 0.03) 100%
+  ); */
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+  z-index: 1;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.whyChooseUs::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: 
+    radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 40% 20%, rgba(212, 175, 55, 0.03) 0%, transparent 50%); */
+  animation: patternMove 20s ease-in-out infinite alternate;
+  z-index: 1;
+}
+
+@keyframes patternMove {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(30px, 30px) scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 800;
+  color: #000000;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 1rem;
+  z-index: 2;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  /* background: linear-gradient(
+    to right,
+    transparent,
+    #d4af37,
+    transparent
+  ); */
+}
+
+.sectionSubtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333333;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+  position: relative;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: 1024px) {
+  .featuresGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.featureCard {
+  background: none;
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  /* border: 2px solid rgba(212, 175, 55, 0.2); */
+  transition: all 0.3s ease;
+  cursor: pointer;
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); */
+  position: relative;
+  overflow: hidden;
+}
+
+.featureCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(212, 175, 55, 0.1),
+    transparent
+  ); */
+  transition: left 0.5s ease;
+}
+
+.featureCard:hover::before {
+  left: 100%;
+}
+
+.featureCard:hover {
+  background: #ffffff;
+  border-color: #d4af37;
+  /* box-shadow: 0 12px 40px rgba(212, 175, 55, 0.25); */
+  transform: translateY(-8px);
+}
+
+.featureIcon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  display: block;
+  color: #C9B384;
+  /* filter: drop-shadow(0 4px 8px rgba(201, 179, 132, 0.2)); */
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.featureCard:hover .featureIcon {
+  transform: scale(1.15) rotate(5deg);
+}
+
+.featureTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.featureDescription {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .whyChooseUs {
+    padding: 3rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .featuresGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .featureCard {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .featureIcon {
+    font-size: 3rem;
+  }
+
+  .featureTitle {
+    font-size: 1.25rem;
+  }
+}
+

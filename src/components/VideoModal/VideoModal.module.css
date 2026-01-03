@@ -1,0 +1,200 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  cursor: pointer;
+}
+
+.modalContent {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.videoContainer {
+  position: relative;
+  max-width: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.modalVideo {
+  max-width: 100%;
+  max-height: 100vh;
+  border-radius: 5px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  background-color: #000;
+}
+
+.videoTitle {
+  color: var(--color-white);
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding: 0 2rem;
+}
+
+.closeButton {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10001;
+}
+
+.closeButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 10001;
+}
+
+.navButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.prevButton {
+  left: -80px;
+}
+
+.nextButton {
+  right: -80px;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .modalOverlay {
+    padding: 1rem;
+  }
+
+  .closeButton {
+    top: -40px;
+    width: 45px;
+    height: 45px;
+    font-size: 1.25rem;
+  }
+
+  .navButton {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .prevButton {
+    left: -60px;
+  }
+
+  .nextButton {
+    right: -60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .modalContent {
+    max-width: 95vw;
+  }
+
+  .modalVideo {
+    max-height: 75vh;
+  }
+
+  .closeButton {
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+
+  .navButton {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+  }
+
+  .prevButton {
+    left: 10px;
+  }
+
+  .nextButton {
+    right: 10px;
+  }
+
+  .videoTitle {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modalOverlay {
+    padding: 0.5rem;
+  }
+
+  .closeButton {
+    top: 5px;
+    right: 5px;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+
+  .navButton {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .modalVideo {
+    max-height: 70vh;
+  }
+}
+

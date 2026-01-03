@@ -1,0 +1,383 @@
+export const translations = {
+  ar: {
+    // Navigation
+    nav: {
+      home: 'الرئيسية',
+      about: 'من نحن',
+      services: 'خدماتنا',
+      projects: 'المشاريع',
+      contact: 'تواصل معنا',
+      cta: 'اطلب استشارة',
+    },
+    // Hero
+    hero: {
+      title: 'مطابخ فاخرة',
+      titleHighlight: ' بتصاميم راقية',
+      description: 'نوفر لك أحدث تصاميم المطابخ والتشطيبات الداخلية بأعلى معايير الجودة والأناقة. نحول منزلك إلى تحفة فنية تعكس ذوقك الراقي.',
+      btnPrimary: 'ابدأ مشروعك الآن',
+      btnSecondary: 'تصفح أعمالنا',
+    },
+    // About
+    about: {
+      title: 'من نحن',
+      description1: 'نحن شركة رائدة في مجال تصميم وتنفيذ المطابخ الفاخرة والتشطيبات الداخلية. بفضل سنوات الخبرة الطويلة والالتزام بالتميز، نجحنا في بناء سمعة ممتازة كواحدة من أفضل الشركات في هذا المجال.',
+      description2: 'نقدم حلولاً مبتكرة تجمع بين الجمال والوظيفية، مستخدمين أحدث التقنيات وأفضل المواد الخام. فريقنا المحترف يعمل بجد لتحويل رؤيتك إلى واقع ملموس يتجاوز توقعاتك.',
+      description3: 'رسالتنا هي أن نكون شريكك الموثوق في رحلة تحويل منزلك إلى مساحة فاخرة تعكس شخصيتك وتلبي جميع احتياجاتك. نؤمن بأن كل مشروع هو قصة فريدة تستحق الاهتمام والتفاصيل الدقيقة.',
+      story: 'قصتنا',
+      features: 'مميزاتنا',
+      stats: {
+        years: 'سنة خبرة',
+        projects: 'مشروع منجز',
+        satisfaction: 'رضا العملاء',
+        support: 'دعم فني',
+      },
+    },
+    // Services
+    services: {
+      title: 'خدماتنا',
+      subtitle: 'نقدم مجموعة شاملة من الخدمات لتحويل منزلك إلى مساحة فاخرة وأنيقة',
+      items: [
+        {
+          id: 1,
+          title: 'مطابخ ألمنيوم فاخرة',
+          description: 'تصميم وتنفيذ مطابخ ألمنيوم عصرية بأعلى معايير الجودة والأناقة',
+          icon: '🏠',
+        },
+        {
+          id: 2,
+          title: 'مطابخ خشبية كلاسيكية',
+          description: 'مطابخ خشبية راقية تجمع بين الأصالة والأناقة العصرية',
+          icon: '🌳',
+        },
+        {
+          id: 3,
+          title: 'التشطيبات الداخلية',
+          description: 'تشطيبات داخلية متكاملة بأحدث التصاميم والأساليب الحديثة',
+          icon: '✨',
+        },
+        {
+          id: 4,
+          title: 'استشارات تصميم',
+          description: 'استشارات مهنية لتصميم المساحات الداخلية بما يناسب ذوقك',
+          icon: '🎨',
+        },
+        {
+          id: 5,
+          title: 'الصيانة والخدمة',
+          description: 'خدمة صيانة شاملة وضمان على جميع أعمالنا',
+          icon: '🔧',
+        },
+        {
+          id: 6,
+          title: 'التسليم السريع',
+          description: 'التزام بمواعيد التسليم مع الحفاظ على أعلى معايير الجودة',
+          icon: '⚡',
+        },
+      ],
+    },
+    // Projects
+    projects: {
+      title: 'مشاريعنا',
+      subtitle: 'اكتشف مجموعة من أعمالنا المميزة التي تجسد الإبداع والجودة',
+      subtitle2: 'اكتشف مجموعة من أبرز مشاريعنا التي تعكس جودة أعمالنا وتميزنا',
+      viewAll: 'عرض الكل',
+      viewMore: 'المزيد من المشاريع',
+      all: 'الكل',
+      aluminum: 'مطابخ ألمنيوم',
+      wooden: 'مطابخ خشبية',
+      interior: 'تشطيبات داخلية',
+      noProjects: 'لا توجد مشاريع في هذه الفئة',
+    },
+    // Videos
+    videos: {
+      title: 'فيديوهات المشاريع',
+      subtitle: 'شاهد مقاطع فيديو من أعمالنا الفاخرة وتصاميمنا المميزة',
+      articleTitle: 'مشاريعنا المميزة',
+      articleP1: 'نفتخر بتقديم مجموعة استثنائية من المشاريع التي تجسد الإبداع والجودة في عالم المطابخ الفاخرة. كل مشروع يمثل رحلة من التصميم إلى التنفيذ، حيث ندمج بين الأناقة والوظيفية لإنشاء مساحات مطبخية تحاكي أحلام عملائنا.',
+      articleP2: 'من المطابخ الكلاسيكية الفاخرة إلى التصاميم العصرية الحديثة، نقدم حلولاً متكاملة تجمع بين الجمال والكفاءة. خبرتنا الواسعة في مجال المطابخ الألمنيوم والخشبية والتشطيبات الداخلية تمكننا من تحويل أي فكرة إلى واقع ملموس.',
+      articleP3: 'استكشف مجموعتنا المتنوعة من المشاريع الناجحة واكتشف كيف يمكننا تحويل مطبخك إلى تحفة فنية تجمع بين الأناقة والراحة. كل تفصيلة مصممة بعناية فائقة لضمان رضاك التام.',
+      viewMore: 'المزيد من فيديوهات المشاريع',
+      videoTitle: 'مشروع مطبخ فاخر',
+    },
+    // Why Choose Us
+    whyChooseUs: {
+      title: 'لماذا تختارنا؟',
+      subtitle: 'نقدم لك تجربة استثنائية من التصميم إلى التنفيذ',
+      features: [
+        {
+          id: 1,
+          title: 'خبرة أكثر من 15 عام',
+          description: 'سنوات طويلة من الخبرة في مجال المطابخ والتشطيبات الداخلية',
+          icon: '🏆',
+        },
+        {
+          id: 2,
+          title: 'جودة عالية مضمونة',
+          description: 'نستخدم أفضل المواد الخام وأحدث التقنيات في التصنيع',
+          icon: '⭐',
+        },
+        {
+          id: 3,
+          title: 'تصاميم فريدة',
+          description: 'فريق من المصممين المحترفين يقدمون حلولًا مبتكرة تناسب ذوقك',
+          icon: '🎨',
+        },
+        {
+          id: 4,
+          title: 'أسعار منافسة',
+          description: 'نقدم أفضل الأسعار مع الحفاظ على الجودة العالية',
+          icon: '💰',
+        },
+        {
+          id: 5,
+          title: 'خدمة عملاء متميزة',
+          description: 'فريق دعم متاح دائماً لمساعدتك في جميع مراحل المشروع',
+          icon: '🤝',
+        },
+        {
+          id: 6,
+          title: 'ضمان شامل',
+          description: 'نوفر ضمانًا شاملاً على جميع أعمالنا وخدماتنا',
+          icon: '🛡️',
+        },
+      ],
+    },
+    // Testimonials
+    testimonials: {
+      title: 'آراء عملائنا',
+      subtitle: 'اكتشف ما يقوله عملاؤنا عن جودة خدماتنا وتجربتهم معنا',
+      customerOpinion: 'رأي عميل',
+      goToImage: 'انتقل إلى الصورة',
+    },
+    // Contact
+    contact: {
+      title: 'تواصل معنا',
+      subtitle: 'نحن هنا لمساعدتك في تحقيق حلم مطبخك المثالي',
+      subtitle2: 'نحن هنا للإجابة على جميع استفساراتك ومشاركة رؤيتك',
+      contactInfo: 'معلومات التواصل',
+      contactInfoDescription: 'يمكنك التواصل معنا من خلال أي من الوسائل التالية، وسنكون سعداء بخدمتك',
+      email: 'البريد الإلكتروني',
+      phone: 'الهاتف',
+      address: 'العنوان',
+      addressValue: 'المملكة العربية السعودية',
+      workingHours: 'ساعات العمل',
+      workingHoursValue: 'الأحد - الخميس: 9 صباحاً - 6 مساءً',
+      followUs: 'تابعنا',
+      sendMessage: 'أرسل لنا رسالة',
+      name: 'الاسم',
+      nameFull: 'الاسم الكامل',
+      namePlaceholder: 'أدخل اسمك',
+      nameFullPlaceholder: 'أدخل اسمك الكامل',
+      emailPlaceholder: 'example@email.com',
+      phonePlaceholder: '+966 5XX XXX XXX',
+      messagePlaceholder: 'اكتب رسالتك هنا...',
+      send: 'إرسال',
+      sendMessageBtn: 'إرسال الرسالة',
+      sending: 'جاري الإرسال...',
+      success: 'تم إرسال الرسالة بنجاح!',
+      successFull: '✓ تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.',
+      error: 'حدث خطأ أثناء الإرسال. يرجى المحاولة مرة أخرى.',
+    },
+    // Footer
+    footer: {
+      companyDescription: 'شركة رائدة في تصميم وتنفيذ المطابخ الفاخرة والتشطيبات الداخلية. نحول منزلك إلى تحفة فنية تعكس ذوقك الراقي.',
+      quickLinks: 'روابط سريعة',
+      contactInfo: 'معلومات التواصل',
+      followUs: 'تابعنا',
+      rights: 'جميع الحقوق محفوظة',
+      madeWith: 'مصمم ومطور بـ',
+      madeWith2: 'لتحقيق رؤيتك',
+    },
+  },
+  en: {
+    // Navigation
+    nav: {
+      home: 'Home',
+      about: 'About Us',
+      services: 'Services',
+      projects: 'Projects',
+      contact: 'Contact Us',
+      cta: 'Request Consultation',
+    },
+    // Hero
+    hero: {
+      title: 'Luxurious Kitchens',
+      titleHighlight: ' with Elegant Designs',
+      description: 'We provide you with the latest kitchen and interior finishing designs with the highest standards of quality and elegance. We transform your home into a work of art that reflects your refined taste.',
+      btnPrimary: 'Start Your Project Now',
+      btnSecondary: 'Browse Our Work',
+    },
+    // About
+    about: {
+      title: 'About Us',
+      description1: 'We are a leading company in the field of designing and implementing luxurious kitchens and interior finishes. Thanks to years of experience and commitment to excellence, we have successfully built an excellent reputation as one of the best companies in this field.',
+      description2: 'We offer innovative solutions that combine beauty and functionality, using the latest technologies and the finest raw materials. Our professional team works hard to turn your vision into a tangible reality that exceeds your expectations.',
+      description3: 'Our mission is to be your trusted partner in transforming your home into a luxurious space that reflects your personality and meets all your needs. We believe that every project is a unique story that deserves attention and meticulous details.',
+      story: 'Our Story',
+      features: 'Our Features',
+      stats: {
+        years: 'Years of Experience',
+        projects: 'Completed Projects',
+        satisfaction: 'Client Satisfaction',
+        support: 'Technical Support',
+      },
+    },
+    // Services
+    services: {
+      title: 'Our Services',
+      subtitle: 'We offer a comprehensive range of services to transform your home into a luxurious and elegant space',
+      items: [
+        {
+          id: 1,
+          title: 'Luxurious Aluminum Kitchens',
+          description: 'Design and implementation of modern aluminum kitchens with the highest standards of quality and elegance',
+          icon: '🏠',
+        },
+        {
+          id: 2,
+          title: 'Classic Wooden Kitchens',
+          description: 'Elegant wooden kitchens that combine authenticity and modern elegance',
+          icon: '🌳',
+        },
+        {
+          id: 3,
+          title: 'Interior Finishes',
+          description: 'Integrated interior finishes with the latest designs and modern methods',
+          icon: '✨',
+        },
+        {
+          id: 4,
+          title: 'Design Consultations',
+          description: 'Professional consultations for designing interior spaces that suit your taste',
+          icon: '🎨',
+        },
+        {
+          id: 5,
+          title: 'Maintenance and Service',
+          description: 'Comprehensive maintenance service and warranty on all our work',
+          icon: '🔧',
+        },
+        {
+          id: 6,
+          title: 'Fast Delivery',
+          description: 'Commitment to delivery schedules while maintaining the highest quality standards',
+          icon: '⚡',
+        },
+      ],
+    },
+    // Projects
+    projects: {
+      title: 'Our Projects',
+      subtitle: 'Discover a collection of our distinguished works that embody creativity and quality',
+      subtitle2: 'Discover a collection of our most prominent projects that reflect the quality of our work and our excellence',
+      viewAll: 'View All',
+      viewMore: 'More Projects',
+      all: 'All',
+      aluminum: 'Aluminum Kitchens',
+      wooden: 'Wooden Kitchens',
+      interior: 'Interior Finishes',
+      noProjects: 'No projects in this category',
+    },
+    // Videos
+    videos: {
+      title: 'Project Videos',
+      subtitle: 'Watch videos of our luxurious works and distinguished designs',
+      articleTitle: 'Our Distinguished Projects',
+      articleP1: 'We are proud to present an exceptional collection of projects that embody creativity and quality in the world of luxurious kitchens. Each project represents a journey from design to implementation, where we combine elegance and functionality to create kitchen spaces that match our clients\' dreams.',
+      articleP2: 'From luxurious classic kitchens to modern contemporary designs, we offer integrated solutions that combine beauty and efficiency. Our extensive experience in aluminum and wooden kitchens and interior finishes enables us to turn any idea into a tangible reality.',
+      articleP3: 'Explore our diverse collection of successful projects and discover how we can transform your kitchen into a work of art that combines elegance and comfort. Every detail is carefully designed to ensure your complete satisfaction.',
+      viewMore: 'More Project Videos',
+      videoTitle: 'Luxurious Kitchen Project',
+    },
+    // Why Choose Us
+    whyChooseUs: {
+      title: 'Why Choose Us?',
+      subtitle: 'We offer you an exceptional experience from design to implementation',
+      features: [
+        {
+          id: 1,
+          title: 'Over 15 Years of Experience',
+          description: 'Long years of experience in the field of kitchens and interior finishes',
+          icon: '🏆',
+        },
+        {
+          id: 2,
+          title: 'Guaranteed High Quality',
+          description: 'We use the finest raw materials and latest technologies in manufacturing',
+          icon: '⭐',
+        },
+        {
+          id: 3,
+          title: 'Unique Designs',
+          description: 'A team of professional designers offering innovative solutions that suit your taste',
+          icon: '🎨',
+        },
+        {
+          id: 4,
+          title: 'Competitive Prices',
+          description: 'We offer the best prices while maintaining high quality',
+          icon: '💰',
+        },
+        {
+          id: 5,
+          title: 'Excellent Customer Service',
+          description: 'A support team always available to help you at all stages of the project',
+          icon: '🤝',
+        },
+        {
+          id: 6,
+          title: 'Comprehensive Warranty',
+          description: 'We provide a comprehensive warranty on all our work and services',
+          icon: '🛡️',
+        },
+      ],
+    },
+    // Testimonials
+    testimonials: {
+      title: 'Client Testimonials',
+      subtitle: 'Discover what our clients say about the quality of our services and their experience with us',
+      customerOpinion: 'Customer Opinion',
+      goToImage: 'Go to image',
+    },
+    // Contact
+    contact: {
+      title: 'Contact Us',
+      subtitle: 'We are here to help you achieve your dream kitchen',
+      subtitle2: 'We are here to answer all your inquiries and share your vision',
+      contactInfo: 'Contact Information',
+      contactInfoDescription: 'You can contact us through any of the following means, and we will be happy to serve you',
+      email: 'Email',
+      phone: 'Phone',
+      address: 'Address',
+      addressValue: 'Saudi Arabia',
+      workingHours: 'Working Hours',
+      workingHoursValue: 'Sunday - Thursday: 9 AM - 6 PM',
+      followUs: 'Follow Us',
+      sendMessage: 'Send Us a Message',
+      name: 'Name',
+      nameFull: 'Full Name',
+      namePlaceholder: 'Enter your name',
+      nameFullPlaceholder: 'Enter your full name',
+      emailPlaceholder: 'example@email.com',
+      phonePlaceholder: '+966 5XX XXX XXX',
+      messagePlaceholder: 'Write your message here...',
+      send: 'Send',
+      sendMessageBtn: 'Send Message',
+      sending: 'Sending...',
+      success: 'Message sent successfully!',
+      successFull: '✓ Your message has been sent successfully! We will contact you soon.',
+      error: 'An error occurred while sending. Please try again.',
+    },
+    // Footer
+    footer: {
+      companyDescription: 'A leading company in designing and implementing luxurious kitchens and interior finishes. We transform your home into a work of art that reflects your refined taste.',
+      quickLinks: 'Quick Links',
+      contactInfo: 'Contact Information',
+      followUs: 'Follow Us',
+      rights: 'All rights reserved',
+      madeWith: 'Designed and developed with',
+      madeWith2: 'to achieve your vision',
+    },
+  },
+}
+

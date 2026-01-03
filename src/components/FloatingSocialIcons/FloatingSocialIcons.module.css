@@ -1,0 +1,212 @@
+.wrapper {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+  pointer-events: none;
+}
+
+.mainDiv {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.mainButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  color: #0064f3;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  pointer-events: all;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.mainButton:hover {
+  transform: scale(1.1);
+}
+
+.consultationButton {
+  visibility: hidden;
+  font-weight: 600;
+  height: 50px;
+  padding: 0 20px;
+  color: #fff;
+  background: linear-gradient(90deg, #00a1f5, #0064f3);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  border: 0;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 0.2s all linear;
+  border-radius: 5px;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-primary);
+}
+
+.mainButton.open ~ .consultationButton {
+  visibility: visible;
+  right: 70px;
+  opacity: 1;
+  transition: 0.4s all cubic-bezier(0, 0.01, 0, 1.27);
+  pointer-events: all;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  opacity: 0;
+  text-decoration: none;
+  color: #fff;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  transition: 0.2s all linear;
+  pointer-events: none;
+}
+
+.mainButton.open ~ .socialLink {
+  opacity: 1;
+  transition: 0.4s all cubic-bezier(0, 0.01, 0, 1.27);
+  pointer-events: all;
+}
+
+.mainButton.open ~ .phoneColor {
+  bottom: 60px;
+}
+
+.mainButton.open ~ .whatsappColor {
+  bottom: 120px;
+}
+
+.mainButton.open ~ .messengerColor {
+  bottom: 180px;
+}
+
+.phoneColor {
+  background: linear-gradient(0deg, #34C759, #4cd964);
+}
+
+.whatsappColor {
+  background: linear-gradient(0deg, #00B100, #09db09);
+}
+
+.messengerColor {
+  background: linear-gradient(0deg, #0078FF, #00C6FF);
+}
+
+.wave {
+  animation-name: wave;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.wave.open {
+  animation-iteration-count: 1;
+}
+
+@keyframes wave {
+  0% {
+    box-shadow: 0 0 0px 0px rgba(0, 100, 243, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0px 10px rgba(0, 100, 243, 0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .wrapper {
+    right: 15px;
+    bottom: 15px;
+  }
+
+  .mainButton {
+    height: 45px;
+    width: 45px;
+    font-size: 18px;
+  }
+
+  .socialLink {
+    height: 45px;
+    width: 45px;
+    font-size: 18px;
+  }
+
+  .consultationButton {
+    height: 45px;
+    padding: 0 15px;
+    font-size: 0.875rem;
+  }
+
+  .mainButton.open ~ .consultationButton {
+    right: 60px;
+  }
+
+  .mainButton.open ~ .phoneColor {
+    bottom: 55px;
+  }
+
+  .mainButton.open ~ .whatsappColor {
+    bottom: 110px;
+  }
+
+  .mainButton.open ~ .messengerColor {
+    bottom: 165px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .mainButton {
+    height: 40px;
+    width: 40px;
+    font-size: 16px;
+  }
+
+  .socialLink {
+    height: 40px;
+    width: 40px;
+    font-size: 16px;
+  }
+
+  .consultationButton {
+    height: 40px;
+    padding: 0 12px;
+    font-size: 0.75rem;
+  }
+
+  .mainButton.open ~ .consultationButton {
+    right: 50px;
+  }
+}
