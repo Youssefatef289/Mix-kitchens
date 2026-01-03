@@ -58,11 +58,19 @@
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
   .videosGrid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 968px) {
+  .videosGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 }
 
@@ -84,7 +92,6 @@
 .videoThumbnail {
   position: relative;
   width: 100%;
-  height: 600px;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
   overflow: hidden;
 }
@@ -283,8 +290,11 @@ html[dir="ltr"] .articleContent {
   }
 
   .videosGrid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: 1fr;
     gap: 1.5rem;
+    display: grid !important;
+    max-width: 100%;
+    width: 100%;
   }
 
   .viewMoreButton {
@@ -305,11 +315,52 @@ html[dir="ltr"] .articleContent {
   .videoArticleContainer {
     margin-top: 2rem;
   }
+
+  .videoCard {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .videoThumbnail {
+    padding-top: 56.25%;
+    height: auto;
+    width: 100%;
+  }
+
+  .thumbnailVideo {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (max-width: 480px) {
   .videosGrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+    display: grid !important;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .videoCard {
+    width: 100% !important;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block !important;
+  }
+
+  .videoThumbnail {
+    padding-top: 56.25%;
+    width: 100%;
+    height: auto;
+  }
+
+  .thumbnailVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
