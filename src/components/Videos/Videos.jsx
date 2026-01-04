@@ -170,10 +170,10 @@ const Videos = ({ showAll = false }) => {
           >
             <div className={styles.videoWrapper}>
               <motion.div
-                className={styles.videoCard}
+                className={`${styles.videoCard} ${styles.homePageVideoCard}`}
                 whileHover={{ scale: 1.02 }}
               >
-                <div className={styles.videoThumbnail}>
+                <div className={`${styles.videoThumbnail} ${styles.homePageVideoThumbnail}`}>
                   <video
                     ref={videoRef}
                     src={video8.src}

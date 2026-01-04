@@ -31,11 +31,11 @@ const Footer = () => {
   ]
 
   const socialMedia = [
-    { name: 'Facebook', icon: FaFacebookF, href: 'https://www.facebook.com/yourpage' },
+    { name: 'Facebook', icon: FaFacebookF, href: 'https://www.facebook.com/share/14SyQYXurmS/?mibextid=wwXIfr' },
+    { name: 'WhatsApp', icon: FaWhatsapp, href: 'https://wa.me/2001008705606' },
     { name: 'Instagram', icon: FaInstagram, href: 'https://www.instagram.com/yourpage' },
     { name: 'Twitter', icon: FaTwitter, href: 'https://www.twitter.com/yourpage' },
     { name: 'LinkedIn', icon: FaLinkedin, href: 'https://www.linkedin.com/company/yourpage' },
-    { name: 'WhatsApp', icon: FaWhatsapp, href: 'https://wa.me/966501234567' },
   ]
 
   const handleLinkClick = (e, path) => {
@@ -105,21 +105,64 @@ const Footer = () => {
             <ul className={styles.contactInfo}>
               <li>
                 <span className={styles.contactIcon}>
+                  <FaPhone />
+                </span>
+                <a href="tel:01008705606" className={styles.contactLink}>01008705606</a>
+              </li>
+              <li>
+                <span className={styles.contactIcon}>
+                  <FaWhatsapp />
+                </span>
+                <a href="https://wa.me/2001008705606" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>واتساب: 01008705606</a>
+              </li>
+              <li>
+                <span className={styles.contactIcon}>
                   <FaEnvelope />
                 </span>
                 <span>info@mix.com</span>
               </li>
+            </ul>
+          </motion.div>
+
+          {/* Branches */}
+          <motion.div
+            className={styles.footerSection}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            <h3 className={styles.footerTitle}>{t.footer.branchesTitle}</h3>
+            <ul className={styles.contactInfo}>
               <li>
                 <span className={styles.contactIcon}>
-                  <FaPhone />
+                  <FaMapMarkerAlt />
                 </span>
-                <span>+966 50 123 4567</span>
+                <span>{t.footer.branch1}</span>
               </li>
               <li>
                 <span className={styles.contactIcon}>
                   <FaMapMarkerAlt />
                 </span>
-                <span>المملكة العربية السعودية</span>
+                <span>{t.footer.branch2}</span>
+              </li>
+              <li>
+                <span className={styles.contactIcon}>
+                  <FaMapMarkerAlt />
+                </span>
+                <span>{t.footer.branch3}</span>
+              </li>
+              <li>
+                <span className={styles.contactIcon}>
+                  <FaMapMarkerAlt />
+                </span>
+                <span>{t.footer.factory}</span>
+              </li>
+              <li>
+                <span className={styles.contactIcon}>
+                  <FaPhone />
+                </span>
+                <span>{t.footer.showroomPhone}</span>
               </li>
             </ul>
           </motion.div>

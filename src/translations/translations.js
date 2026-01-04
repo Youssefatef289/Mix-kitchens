@@ -6,8 +6,11 @@ export const translations = {
       about: 'من نحن',
       services: 'خدماتنا',
       projects: 'المشاريع',
+      kitchens: 'المطابخ',
+      dressingRoom: 'الدريسنج روم',
       contact: 'تواصل معنا',
-      cta: 'اطلب استشارة',
+      cta: 'اطلب معاينة',
+      ctaWithPhone: 'اطلب معاينة: 01008705606',
     },
     // Hero
     hero: {
@@ -87,6 +90,12 @@ export const translations = {
       wooden: 'مطابخ خشبية',
       interior: 'تشطيبات داخلية',
       noProjects: 'لا توجد مشاريع في هذه الفئة',
+    },
+    // Dressing Room
+    dressingRoom: {
+      title: 'الدريسنج روم',
+      subtitle: 'اكتشف مجموعة من تصاميم الدريسنج روم الفاخرة التي تجسد الأناقة والراحة',
+      description: 'نقدم لك أحدث تصاميم الدريسنج روم المصممة بعناية فائقة لتوفير مساحة تخزين منظمة وأنيقة. من التصاميم الكلاسيكية إلى العصرية، نضمن لك تجربة فريدة تجمع بين الجمال والوظيفية.',
     },
     // Videos
     videos: {
@@ -183,10 +192,17 @@ export const translations = {
       companyDescription: 'شركة رائدة في تصميم وتنفيذ المطابخ الفاخرة والتشطيبات الداخلية. نحول منزلك إلى تحفة فنية تعكس ذوقك الراقي.',
       quickLinks: 'روابط سريعة',
       contactInfo: 'معلومات التواصل',
+      branches: 'فروعنا',
       followUs: 'تابعنا',
       rights: 'جميع الحقوق محفوظة',
       madeWith: 'مصمم ومطور بـ',
       madeWith2: 'لتحقيق رؤيتك',
+      branchesTitle: 'فروعنا',
+      branch1: 'الفرع الأول: بجوار النادي الرياضي، كورنيش النيل',
+      branch2: 'الفرع الثاني: أمام حديقة النيل، كورنيش النيل، بني سويف، مصر',
+      branch3: 'فرع الغردقة: على طريق الأحياء أمام كلية تربية ومدينة الشباب',
+      factory: 'المصنع: المدينة الصناعية العلامة',
+      showroomPhone: 'رقم المعرض: 01070881741',
     },
   },
   en: {
@@ -196,8 +212,11 @@ export const translations = {
       about: 'About Us',
       services: 'Services',
       projects: 'Projects',
+      kitchens: 'Kitchens',
+      dressingRoom: 'Dressing Room',
       contact: 'Contact Us',
-      cta: 'Request Consultation',
+      cta: 'Request Visit',
+      ctaWithPhone: 'Request Visit: 01008705606',
     },
     // Hero
     hero: {
@@ -277,6 +296,12 @@ export const translations = {
       wooden: 'Wooden Kitchens',
       interior: 'Interior Finishes',
       noProjects: 'No projects in this category',
+    },
+    // Dressing Room
+    dressingRoom: {
+      title: 'Dressing Room',
+      subtitle: 'Discover a collection of luxurious dressing room designs that embody elegance and comfort',
+      description: 'We offer you the latest dressing room designs carefully designed to provide organized and elegant storage space. From classic to modern designs, we guarantee you a unique experience that combines beauty and functionality.',
     },
     // Videos
     videos: {
@@ -373,10 +398,17 @@ export const translations = {
       companyDescription: 'A leading company in designing and implementing luxurious kitchens and interior finishes. We transform your home into a work of art that reflects your refined taste.',
       quickLinks: 'Quick Links',
       contactInfo: 'Contact Information',
+      branches: 'Our Branches',
       followUs: 'Follow Us',
       rights: 'All rights reserved',
       madeWith: 'Designed and developed with',
       madeWith2: 'to achieve your vision',
+      branchesTitle: 'Our Branches',
+      branch1: 'Branch 1: Next to the Sports Club, Nile Corniche',
+      branch2: 'Branch 2: In front of Nile Garden, Nile Corniche, Beni Suef, Egypt',
+      branch3: 'Hurghada Branch: On Al-Ahyaa Road, in front of Education College and Youth City',
+      factory: 'Factory: Al-Alama Industrial City',
+      showroomPhone: 'Showroom Phone: 01070881741',
     },
   },
 }

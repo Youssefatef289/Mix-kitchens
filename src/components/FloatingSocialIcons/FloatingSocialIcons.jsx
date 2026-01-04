@@ -8,10 +8,14 @@ import {
   SiFacebook,
   SiWhatsapp
 } from 'react-icons/si'
+import { useLanguage } from '../../context/LanguageContext'
+import { translations } from '../../translations/translations'
 import styles from './FloatingSocialIcons.module.css'
 
 const FloatingSocialIcons = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const { language } = useLanguage()
+  const t = translations[language]
 
   const toggleMenu = () => {
     setIsOpen(!isOpen)
@@ -27,14 +31,15 @@ const FloatingSocialIcons = () => {
           {isOpen ? <FaTimes /> : <FaComments />}
         </div>
 
-        <button 
+        <a 
+          href="tel:01008705606" 
           className={styles.consultationButton}
         >
-          <FaPhoneAlt /> استشارة مجانية
-        </button>
+          <FaPhoneAlt /> {t.nav.ctaWithPhone}
+        </a>
 
         <a 
-          href="tel:+966501234567" 
+          href="tel:01008705606" 
           className={`${styles.socialLink} ${styles.phoneColor}`}
           target="_blank"
           rel="noopener noreferrer"
@@ -44,7 +49,7 @@ const FloatingSocialIcons = () => {
         </a>
 
         <a 
-          href="https://wa.me/966501234567" 
+          href="https://wa.me/2001008705606" 
           className={`${styles.socialLink} ${styles.whatsappColor}`}
           target="_blank"
           rel="noopener noreferrer"
@@ -54,7 +59,7 @@ const FloatingSocialIcons = () => {
         </a>
 
         <a 
-          href="https://www.facebook.com/yourpage" 
+          href="https://www.facebook.com/share/14SyQYXurmS/?mibextid=wwXIfr" 
           className={`${styles.socialLink} ${styles.messengerColor}`}
           target="_blank"
           rel="noopener noreferrer"

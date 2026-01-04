@@ -108,6 +108,105 @@
   width: 100%;
 }
 
+.dropdownContainer {
+  position: relative;
+}
+
+.dropdownArrow {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 0.7rem;
+  transition: transform 0.3s ease;
+}
+
+html[dir="ltr"] .dropdownArrow {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  list-style: none;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  min-width: 180px;
+  z-index: 1000;
+}
+
+html[dir="ltr"] .dropdown {
+  right: auto;
+  left: 0;
+}
+
+.dropdownLink {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.dropdownLink:hover {
+  background-color: #f5f5f5;
+  color: #C9B384;
+}
+
+.mobileDropdownContainer {
+  position: relative;
+}
+
+.mobileDropdownButton {
+  width: 100%;
+  background: transparent;
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.75rem 0;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.mobileDropdownButton:hover {
+  color: var(--color-secondary);
+}
+
+.mobileDropdown {
+  list-style: none;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.mobileDropdownLink {
+  display: block;
+  padding: 0.75rem 2rem;
+  color: var(--color-white);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.mobileDropdownLink:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-secondary);
+  padding-right: 2.5rem;
+}
+
+.dropdownArrowOpen {
+  transform: rotate(180deg);
+}
+
 .languageButton {
   background: transparent;
   color: var(--color-primary);

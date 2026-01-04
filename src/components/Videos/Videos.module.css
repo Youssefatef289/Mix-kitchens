@@ -59,6 +59,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  height: 900px;
 }
 
 @media (min-width: 1024px) {
@@ -76,24 +77,35 @@
 
 .videoCard {
   position: relative;
-  border-radius: 12px;
+  border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
   transition: all 0.3s ease;
   background-color: var(--color-dark-gray);
+  height: 300px;
 }
 
 .videoCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); */
 }
 
 .videoThumbnail {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%; 
   overflow: hidden;
+  height: 300px;
+}
+
+/* Home page video - Portrait (Vertical) */
+.homePageVideoThumbnail {
+  /* padding-top: 177.78%;  */
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  flex: 1;
 }
 
 .thumbnailVideo {
@@ -121,12 +133,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to top,
     rgba(26, 26, 26, 0.9) 0%,
     rgba(26, 26, 26, 0.7) 50%,
     rgba(26, 26, 26, 0.5) 100%
-  );
+  ); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,26 +149,26 @@
   cursor: pointer;
 }
 
-.playOverlay:hover {
+/* .playOverlay:hover {
   background: linear-gradient(
     to top,
     rgba(26, 26, 26, 0.95) 0%,
     rgba(26, 26, 26, 0.8) 50%,
     rgba(26, 26, 26, 0.6) 100%
   );
-}
+} */
 
 .playButton {
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+  width: 50px;
+  height: 50px;
+  background: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--color-primary);
   font-size: 2rem;
-  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4);
+  /* box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4); */
   transition: all 0.3s ease;
   padding-left: 5px; /* Offset play icon to center */
 }
@@ -208,11 +220,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  align-items: center;
+  align-items: stretch;
   margin-top: 3rem;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  min-height: 500px;
 }
 
 html[dir="ltr"] .videoArticleContainer {
@@ -221,6 +234,19 @@ html[dir="ltr"] .videoArticleContainer {
 
 .videoWrapper {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 100%;
+}
+
+.homePageVideoCard {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .articleWrapper {
@@ -277,6 +303,15 @@ html[dir="ltr"] .articleContent {
 
   .articleContent {
     text-align: center;
+  }
+
+  .homePageVideoThumbnail {
+    max-width: 100%;
+    padding-top: 177.78%; /* Maintain 9:16 ratio */
+  }
+
+  .homePageVideoCard {
+    max-width: 100%;
   }
 }
 

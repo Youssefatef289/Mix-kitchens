@@ -8,6 +8,7 @@ import styles from './Navbar.module.css'
 const Navbar = ({ isTransparent = false, hasHero = false }) => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isProjectsDropdownOpen, setIsProjectsDropdownOpen] = useState(false)
   const navigate = useNavigate()
   const { language, toggleLanguage } = useLanguage()
   const t = translations[language]
@@ -25,8 +26,11 @@ const Navbar = ({ isTransparent = false, hasHero = false }) => {
     { name: t.nav.home, path: '/' },
     { name: t.nav.about, path: '/about' },
     { name: t.nav.services, path: '/services' },
-    { name: t.nav.projects, path: '/projects' },
-    { name: t.nav.contact, path: '/contact' },
+  ]
+
+  const projectsDropdownItems = [
+    { name: t.nav.kitchens, path: '/projects' },
+    { name: t.nav.dressingRoom, path: '/dressing-room' },
   ]
 
   const handleLinkClick = (e, path) => {
@@ -77,6 +81,60 @@ const Navbar = ({ isTransparent = false, hasHero = false }) => {
               </Link>
             </li>
           ))}
+          {/* Projects Dropdown */}
+          <li 
+            className={styles.dropdownContainer}
+            onMouseEnter={() => setIsProjectsDropdownOpen(true)}
+            onMouseLeave={() => setIsProjectsDropdownOpen(false)}
+          >
+            <span className={styles.navLink}>
+              {language === 'ar' ? (
+                <>
+                  <span className={styles.dropdownArrow}>▼</span>
+                  {t.nav.projects}
+                </>
+              ) : (
+                <>
+                  {t.nav.projects}
+                  <span className={styles.dropdownArrow}>▼</span>
+                </>
+              )}
+            </span>
+            {isProjectsDropdownOpen && (
+              <motion.ul
+                className={styles.dropdown}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -10 }}
+                transition={{ duration: 0.2 }}
+              >
+                {projectsDropdownItems.map((item, index) => (
+                  <li key={index}>
+                    <Link
+                      to={item.path}
+                      onClick={(e) => {
+                        handleLinkClick(e, item.path)
+                        setIsProjectsDropdownOpen(false)
+                      }}
+                      className={styles.dropdownLink}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </motion.ul>
+            )}
+          </li>
+          {/* Contact Link */}
+          <li>
+            <Link
+              to="/contact"
+              onClick={(e) => handleLinkClick(e, '/contact')}
+              className={styles.navLink}
+            >
+              {t.nav.contact}
+            </Link>
+          </li>
         </ul>
 
         {/* Language Toggle Button */}
@@ -92,13 +150,12 @@ const Navbar = ({ isTransparent = false, hasHero = false }) => {
 
         {/* CTA Button */}
         <motion.a
-          href="/contact"
-          onClick={(e) => handleLinkClick(e, '/contact')}
+          href="tel:01008705606"
           className={styles.ctaButton}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          {t.nav.cta}
+          {t.nav.ctaWithPhone}
         </motion.a>
 
         {/* Mobile Menu Button */}
@@ -135,6 +192,50 @@ const Navbar = ({ isTransparent = false, hasHero = false }) => {
               </Link>
             </li>
           ))}
+          {/* Mobile Projects Dropdown */}
+          <li className={styles.mobileDropdownContainer}>
+            <button
+              className={styles.mobileDropdownButton}
+              onClick={() => setIsProjectsDropdownOpen(!isProjectsDropdownOpen)}
+            >
+              {t.nav.projects}
+              <span className={isProjectsDropdownOpen ? styles.dropdownArrowOpen : styles.dropdownArrow}>▼</span>
+            </button>
+            {isProjectsDropdownOpen && (
+              <motion.ul
+                className={styles.mobileDropdown}
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 'auto' }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.2 }}
+              >
+                {projectsDropdownItems.map((item, index) => (
+                  <li key={index}>
+                    <Link
+                      to={item.path}
+                      onClick={(e) => {
+                        handleLinkClick(e, item.path)
+                        setIsProjectsDropdownOpen(false)
+                      }}
+                      className={styles.mobileDropdownLink}
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </motion.ul>
+            )}
+          </li>
+          {/* Mobile Contact Link */}
+          <li>
+            <Link
+              to="/contact"
+              onClick={(e) => handleLinkClick(e, '/contact')}
+              className={styles.mobileNavLink}
+            >
+              {t.nav.contact}
+            </Link>
+          </li>
           <li>
             <button
               onClick={toggleLanguage}
@@ -144,13 +245,12 @@ const Navbar = ({ isTransparent = false, hasHero = false }) => {
             </button>
           </li>
           <li>
-            <Link
-              to="/contact"
-              onClick={(e) => handleLinkClick(e, '/contact')}
+            <a
+              href="tel:01008705606"
               className={styles.mobileCtaButton}
             >
-              {t.nav.cta}
-            </Link>
+              {t.nav.ctaWithPhone}
+            </a>
           </li>
         </ul>
       </motion.div>

@@ -132,9 +132,32 @@
   font-size: 0.95rem;
 }
 
+.whatsappLink {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.whatsappLink:hover {
+  color: #25D366;
+}
+
 .contactIcon {
   font-size: 1.25rem;
   min-width: 30px;
+  color: #d4af37;
+}
+
+.contactLink {
+  color: #555555;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contactLink:hover {
   color: #d4af37;
 }
 
