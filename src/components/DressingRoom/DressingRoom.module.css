@@ -259,8 +259,63 @@ html[dir="ltr"] .articleContent {
     padding: 0 1rem;
   }
 
+  .videoArticleContainer {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .articleWrapper {
+    padding: 1rem 0;
+  }
+
+  .articleTitle {
+    text-align: center;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-bottom: 1.5rem;
+  }
+
+  html[dir="ltr"] .articleTitle {
+    text-align: center;
+  }
+
+  .articleContent {
+    text-align: center;
+  }
+
+  html[dir="ltr"] .articleContent {
+    text-align: center;
+  }
+
+  .videoCard {
+    max-width: 100%;
+  }
+
   .videoThumbnail {
     height: 300px;
+  }
+
+  .sectionTitle {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    margin-bottom: 1rem;
+  }
+
+  .sectionSubtitle {
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dressingRoom {
+    padding: 2.5rem 0;
+  }
+
+  .videoThumbnail {
+    height: 250px;
+  }
+
+  .articleContent p {
+    font-size: 0.95rem;
   }
 }
 

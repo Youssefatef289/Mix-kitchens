@@ -200,12 +200,13 @@ html[dir="ltr"] .testimonialText {
 }
 
 /* Responsive */
-@media (max-width: 1024px) {
-  .testimonialsGrid {
+@media (max-width: 968px) {
+  .testimonialsGrid:not(.singleCard) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
-  
-  .testimonialsGrid .testimonialCard:nth-child(3) {
+
+  .testimonialsGrid:not(.singleCard) .testimonialCard:nth-child(n+3) {
     display: none;
   }
 }
