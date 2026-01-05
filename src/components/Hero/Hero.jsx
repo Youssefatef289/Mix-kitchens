@@ -61,14 +61,14 @@ const Hero = () => {
             <motion.img
               key={currentImageIndex}
               src={heroImages[currentImageIndex]}
-              alt="مطابخ فاخرة"
-              className={styles.heroImage}
+            alt="مطابخ فاخرة"
+            className={styles.heroImage}
               variants={imageVariants}
               initial="enter"
               animate="center"
               exit="exit"
               transition={imageTransition}
-            />
+          />
           </AnimatePresence>
           <div className={styles.overlay}></div>
         </div>

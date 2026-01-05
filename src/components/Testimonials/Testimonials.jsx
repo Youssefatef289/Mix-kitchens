@@ -9,7 +9,7 @@ import styles from './Testimonials.module.css'
 const Testimonials = ({ showMultiple = false }) => {
   const { language } = useLanguage()
   const t = translations[language]
-  
+
   const [currentIndex, setCurrentIndex] = useState(0)
   const [direction, setDirection] = useState(1)
 
@@ -94,16 +94,16 @@ const Testimonials = ({ showMultiple = false }) => {
           <div className={`${styles.testimonialsGrid} ${!showMultiple ? styles.singleCard : ''}`}>
             <AnimatePresence mode="wait" custom={direction}>
               {visibleTestimonials.map((testimonial, idx) => (
-                <motion.div
+              <motion.div
                   key={showMultiple ? `${currentIndex}-${idx}` : currentIndex}
-                  custom={direction}
-                  variants={slideVariants}
-                  initial="enter"
-                  animate="center"
-                  exit="exit"
-                  transition={slideTransition}
-                  className={styles.testimonialCard}
-                >
+                custom={direction}
+                variants={slideVariants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={slideTransition}
+                className={styles.testimonialCard}
+              >
                   <div className={styles.quoteMark}>"</div>
                   <p className={styles.testimonialText}>{testimonial.text}</p>
                   <div className={styles.divider}></div>
@@ -113,13 +113,13 @@ const Testimonials = ({ showMultiple = false }) => {
                         <img
                           src={testimonial.image}
                           alt={testimonial.name}
-                          loading="lazy"
-                        />
+                    loading="lazy"
+                  />
                       </div>
                     )}
                     <p className={styles.customerName}>{testimonial.name}</p>
-                  </div>
-                </motion.div>
+                </div>
+              </motion.div>
               ))}
             </AnimatePresence>
           </div>
@@ -131,21 +131,21 @@ const Testimonials = ({ showMultiple = false }) => {
           >
             <FaChevronRight />
           </button>
-        </div>
+          </div>
 
-        {/* Dots Indicator */}
-        <div className={styles.dotsContainer}>
+          {/* Dots Indicator */}
+          <div className={styles.dotsContainer}>
           {testimonialsData.map((_, index) => (
-            <button
-              key={index}
-              className={`${styles.dot} ${index === currentIndex ? styles.active : ''}`}
-              onClick={() => {
-                setDirection(index > currentIndex ? 1 : -1)
-                setCurrentIndex(index)
-              }}
+              <button
+                key={index}
+                className={`${styles.dot} ${index === currentIndex ? styles.active : ''}`}
+                onClick={() => {
+                  setDirection(index > currentIndex ? 1 : -1)
+                  setCurrentIndex(index)
+                }}
               aria-label={`${t.testimonials.goToImage} ${index + 1}`}
-            />
-          ))}
+              />
+            ))}
         </div>
       </div>
     </section>

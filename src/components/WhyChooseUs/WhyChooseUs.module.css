@@ -196,6 +196,13 @@
 }
 
 /* Responsive */
+@media (max-width: 968px) {
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .whyChooseUs {
     padding: 3rem 0;
@@ -213,15 +220,39 @@
   .featureCard {
     padding: 2rem 1.5rem;
   }
+
+  .sectionTitle {
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    margin-bottom: 1rem;
+  }
+
+  .sectionSubtitle {
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    margin-bottom: 2.5rem;
+  }
 }
 
 @media (max-width: 480px) {
+  .whyChooseUs {
+    padding: 2.5rem 0;
+  }
+
+  .featureCard {
+    padding: 1.5rem 1rem;
+  }
+
   .featureIcon {
     font-size: 3rem;
+    margin-bottom: 1rem;
   }
 
   .featureTitle {
     font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .featureDescription {
+    font-size: 0.9rem;
   }
 }
 
