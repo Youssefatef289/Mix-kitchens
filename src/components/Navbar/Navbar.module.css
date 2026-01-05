@@ -4,8 +4,9 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 1rem 0;
+  will-change: background-color, padding, box-shadow;
 }
 
 .navbarSolid {
