@@ -148,6 +148,26 @@
     padding: 2.5rem 0;
   }
 
+  .container {
+    padding: 0 1rem;
+  }
+
+  .content {
+    gap: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .description {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
   .statsGrid {
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -158,7 +178,12 @@
   }
 
   .statNumber {
-    font-size: 2rem;
+    font-size: clamp(2rem, 6vw, 2.5rem);
+    margin-bottom: 0.5rem;
+  }
+
+  .statLabel {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
   }
 }
 

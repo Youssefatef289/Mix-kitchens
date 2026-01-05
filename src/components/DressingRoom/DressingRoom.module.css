@@ -310,12 +310,55 @@ html[dir="ltr"] .articleContent {
     padding: 2.5rem 0;
   }
 
-  .videoThumbnail {
-    height: 250px;
+  .container {
+    padding: 0 1rem;
+  }
+
+  .sectionTitle {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .sectionSubtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
+    margin-bottom: 2rem;
+  }
+
+  .videoArticleContainer {
+    gap: 1.5rem;
+  }
+
+  .articleTitle {
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
+    margin-bottom: 1rem;
   }
 
   .articleContent p {
+    font-size: clamp(0.875rem, 2.5vw, 0.95rem);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+  }
+
+  .videoThumbnail {
+    height: 220px;
+  }
+
+  .playButton {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .videoTitle {
+    font-size: clamp(0.95rem, 3vw, 1.1rem);
+  }
+
+  .viewMoreButton {
+    padding: 0.75rem 1.5rem;
     font-size: 0.95rem;
+    max-width: 280px;
+    width: 100%;
   }
 }
 

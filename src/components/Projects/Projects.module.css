@@ -245,16 +245,46 @@
     padding: 2.5rem 0;
   }
 
+  .container {
+    padding: 0 1rem;
+  }
+
+  .sectionTitle {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .sectionSubtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
+    margin-bottom: 2rem;
+  }
+
+  .projectsGrid {
+    gap: 1.5rem;
+  }
+
+  .projectCard {
+    min-height: auto;
+  }
+
   .projectImageWrapper {
-    height: 250px;
+    height: 220px;
   }
 
   .projectInfo {
-    padding: 1.5rem 1rem;
+    padding: 1.25rem 1rem;
   }
 
   .projectTitle {
-    font-size: 1.15rem;
+    font-size: clamp(1rem, 3.5vw, 1.15rem);
+    line-height: 1.4;
+  }
+
+  .viewMoreButton {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    max-width: 280px;
   }
 }
 

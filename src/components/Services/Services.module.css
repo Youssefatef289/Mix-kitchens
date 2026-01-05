@@ -156,22 +156,42 @@
     padding: 2.5rem 0;
   }
 
+  .container {
+    padding: 0 1rem;
+  }
+
+  .sectionTitle {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .sectionSubtitle {
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
+    margin-bottom: 2rem;
+  }
+
+  .servicesGrid {
+    gap: 1.25rem;
+  }
+
   .serviceCard {
     padding: 1.5rem 1rem;
   }
 
   .serviceIcon {
-    font-size: 3rem;
+    font-size: clamp(2.5rem, 7vw, 3rem);
     margin-bottom: 1rem;
   }
 
   .serviceTitle {
-    font-size: 1.25rem;
+    font-size: clamp(1.1rem, 3.5vw, 1.25rem);
     margin-bottom: 0.75rem;
   }
 
   .serviceDescription {
-    font-size: 0.9rem;
+    font-size: clamp(0.875rem, 2.5vw, 0.95rem);
+    line-height: 1.6;
   }
 }
 

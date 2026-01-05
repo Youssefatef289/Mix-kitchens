@@ -241,13 +241,69 @@ html[dir="ltr"] .branchLink:hover {
 }
 
 @media (max-width: 480px) {
+  .footer {
+    padding: 1.5rem 0 0.5rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .footerContent {
+    gap: 1.25rem;
+  }
+
+  .footerSection {
+    gap: 0.75rem;
+  }
+
   .logoImg {
     width: 40px;
     height: 40px;
   }
 
   .logoText {
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+  }
+
+  .companyDescription {
+    font-size: clamp(0.85rem, 2.5vw, 0.9rem);
+    line-height: 1.7;
+  }
+
+  .footerTitle {
+    font-size: clamp(1rem, 3vw, 1.15rem);
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .footerLink {
+    font-size: clamp(0.85rem, 2.5vw, 0.9rem);
+    padding: 0.5rem 0;
+  }
+
+  .contactInfo li {
+    font-size: clamp(0.85rem, 2.5vw, 0.9rem);
+    margin-bottom: 0.75rem;
+  }
+
+  .contactIcon {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+  }
+
+  .socialIcon {
+    width: 35px;
+    height: 35px;
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+  }
+
+  .copyright {
+    font-size: clamp(0.8rem, 2vw, 0.85rem);
+    padding-top: 1rem;
+  }
+
+  .madeWith {
+    font-size: clamp(0.75rem, 2vw, 0.8rem);
   }
 }
 

@@ -248,15 +248,58 @@
 }
 
 @media (max-width: 480px) {
+  .hero {
+    min-height: 450px;
+    height: 100vh;
+    max-height: 600px;
+  }
+
+  .heroContent {
+    padding: 90px 1rem 0;
+  }
+
   .heroTitle {
-    font-size: 2rem;
+    font-size: clamp(1.75rem, 6vw, 2.25rem);
+    margin-bottom: 1rem;
+    line-height: 1.3;
   }
 
   .heroDescription {
+    font-size: clamp(0.875rem, 2.5vw, 1rem);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+  }
+
+  .heroButtons {
+    gap: 0.75rem;
+  }
+
+  .btn {
+    padding: 0.75rem 1.5rem;
     font-size: 0.95rem;
+    max-width: 280px;
   }
 
   .sliderDots {
-    bottom: 2rem;
+    bottom: 1.5rem;
+    gap: 0.5rem;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .dot.active {
+    width: 28px;
+  }
+
+  .scrollIndicator {
+    bottom: 0.75rem;
+  }
+
+  .scrollIndicator span {
+    width: 25px;
+    height: 40px;
   }
 }
