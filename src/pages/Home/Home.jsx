@@ -4,6 +4,7 @@ import About from '../../components/About/About'
 import Services from '../../components/Services/Services'
 import Projects from '../../components/Projects/Projects'
 import Videos from '../../components/Videos/Videos'
+import DressingRoom from '../../components/DressingRoom/DressingRoom'
 import WhyChooseUs from '../../components/WhyChooseUs/WhyChooseUs'
 import Testimonials from '../../components/Testimonials/Testimonials'
 
@@ -15,6 +16,7 @@ const Home = () => {
       <Services />
       <Projects />
       <Videos />
+      <DressingRoom />
       <WhyChooseUs />
       <Testimonials />
     </>

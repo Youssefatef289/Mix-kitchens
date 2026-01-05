@@ -138,25 +138,53 @@ const Footer = () => {
                 <span className={styles.contactIcon}>
                   <FaMapMarkerAlt />
                 </span>
-                <span>{t.footer.branch1}</span>
+                <a 
+                  href={t.footer.branch1Map} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={styles.branchLink}
+                >
+                  {t.footer.branch1}
+                </a>
               </li>
               <li>
                 <span className={styles.contactIcon}>
                   <FaMapMarkerAlt />
                 </span>
-                <span>{t.footer.branch2}</span>
+                <a 
+                  href={t.footer.branch2Map} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={styles.branchLink}
+                >
+                  {t.footer.branch2}
+                </a>
               </li>
               <li>
                 <span className={styles.contactIcon}>
                   <FaMapMarkerAlt />
                 </span>
-                <span>{t.footer.branch3}</span>
+                <a 
+                  href={t.footer.branch3Map} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={styles.branchLink}
+                >
+                  {t.footer.branch3}
+                </a>
               </li>
               <li>
                 <span className={styles.contactIcon}>
                   <FaMapMarkerAlt />
                 </span>
-                <span>{t.footer.factory}</span>
+                <a 
+                  href={t.footer.factoryMap} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className={styles.branchLink}
+                >
+                  {t.footer.factory}
+                </a>
               </li>
               <li>
                 <span className={styles.contactIcon}>

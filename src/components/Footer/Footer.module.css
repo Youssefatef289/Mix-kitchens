@@ -161,6 +161,24 @@
   color: #d4af37;
 }
 
+.branchLink {
+  color: #555555;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.branchLink:hover {
+  color: #d4af37;
+  text-decoration: underline;
+  transform: translateX(-3px);
+}
+
+html[dir="ltr"] .branchLink:hover {
+  transform: translateX(3px);
+}
+
 .socialMedia {
   display: flex;
   gap: 1rem;

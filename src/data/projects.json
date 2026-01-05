@@ -3,55 +3,242 @@
     "id": 1,
     "title": "مطبخ ألمنيوم عصري",
     "category": "aluminum",
-    "image": "/image/Aluminum kitchens/Aluminum kitchens (1).jpeg"
+    "image": "/image/Aluminum kitchens/Aluminum kitchens (1).jpeg",
+    "images": [
+      "/image/Kitchen pictures/kitchen/kitchen (1).jpg",
+      "/image/Kitchen pictures/kitchen/kitchen (2).jpg",
+      "/image/Kitchen pictures/kitchen/kitchen (3).jpg",
+      "/image/Kitchen pictures/kitchen/kitchen (4).jpg",
+      "/image/Kitchen pictures/kitchen/kitchen (5).jpg",
+      "/image/Kitchen pictures/kitchen/kitchen (6).jpg"
+    ],
+    "materials": "ألمنيوم عالي الجودة، زجاج مقاوم للحرارة، أثاث مطبخ عصري"
   },
   {
     "id": 2,
     "title": "مطبخ خشبي فاخر",
     "category": "wooden",
-    "image": "/image/Wooden kitchens/Wooden kitchens (1).jpeg"
+    "image": "/image/Wooden kitchens/Wooden kitchens (1).jpeg",
+    "images": [
+      "/image/Kitchen pictures/kitchen (2)/kitchen (1).jpg",
+      "/image/Kitchen pictures/kitchen (2)/kitchen (2).jpg",
+      "/image/Kitchen pictures/kitchen (2)/kitchen (3).jpg",
+      "/image/Kitchen pictures/kitchen (2)/kitchen (4).jpg",
+      "/image/Kitchen pictures/kitchen (2)/kitchen (5).jpg",
+      "/image/Kitchen pictures/kitchen (2)/kitchen (6).jpg",
+      "/image/Kitchen pictures/kitchen (2)/kitchen (7).jpg",
+      "/image/Kitchen pictures/kitchen (2)/kitchen (8).jpg",
+      "/image/Kitchen pictures/kitchen (2)/kitchen (9).jpg",
+      "/image/Kitchen pictures/kitchen (2)/kitchen (10).jpg",
+      "/image/Kitchen pictures/kitchen (2)/kitchen (11).jpg",
+      "/image/Kitchen pictures/kitchen (2)/kitchen (12).jpg",
+      "/image/Kitchen pictures/kitchen (2)/kitchen (13).jpg",
+      "/image/Kitchen pictures/kitchen (2)/kitchen (14).jpg"
+    ],
+    "materials": "خشب بلوط طبيعي، رخام إيطالي، إكسسوارات نحاسية فاخرة"
   },
   {
     "id": 3,
     "title": "مطبخ ألمنيوم كلاسيكي",
     "category": "aluminum",
-    "image": "/image/Aluminum kitchens/Aluminum kitchens (2).jpeg"
+    "image": "/image/Aluminum kitchens/Aluminum kitchens (2).jpeg",
+    "images": [
+      "/image/Kitchen pictures/kitchen (3)/kitchen (1).jpg",
+      "/image/Kitchen pictures/kitchen (3)/kitchen (2).jpg",
+      "/image/Kitchen pictures/kitchen (3)/kitchen (3).jpg",
+      "/image/Kitchen pictures/kitchen (3)/kitchen (4).jpg",
+      "/image/Kitchen pictures/kitchen (3)/kitchen (5).jpg",
+      "/image/Kitchen pictures/kitchen (3)/kitchen (6).jpg",
+      "/image/Kitchen pictures/kitchen (3)/kitchen (7).jpg",
+      "/image/Kitchen pictures/kitchen (3)/kitchen (8).jpg",
+      "/image/Kitchen pictures/kitchen (3)/kitchen (9).jpg",
+      "/image/Kitchen pictures/kitchen (3)/kitchen (10).jpg",
+      "/image/Kitchen pictures/kitchen (3)/kitchen (11).jpg",
+      "/image/Kitchen pictures/kitchen (3)/kitchen (12).jpg"
+    ],
+    "materials": "ألمنيوم معالج، جرانيت طبيعي، أجهزة مطبخ متطورة"
   },
   {
     "id": 4,
     "title": "مطبخ خشبي عصري",
     "category": "wooden",
-    "image": "/image/Wooden kitchens/Wooden kitchens (2).jpeg"
+    "image": "/image/Wooden kitchens/Wooden kitchens (2).jpeg",
+    "images": [
+      "/image/Kitchen pictures/kitchen (4)/kitchen (1).jpg",
+      "/image/Kitchen pictures/kitchen (4)/kitchen (2).jpg",
+      "/image/Kitchen pictures/kitchen (4)/kitchen (3).jpg",
+      "/image/Kitchen pictures/kitchen (4)/kitchen (4).jpg",
+      "/image/Kitchen pictures/kitchen (4)/kitchen (5).jpg",
+      "/image/Kitchen pictures/kitchen (4)/kitchen (6).jpg",
+      "/image/Kitchen pictures/kitchen (4)/kitchen (7).jpg",
+      "/image/Kitchen pictures/kitchen (4)/kitchen (8).jpg"
+    ],
+    "materials": "خشب جوز أمريكي، كوارتز صناعي، إضاءة LED مدمجة"
   },
   {
     "id": 5,
     "title": "مطبخ ألمنيوم فاخر",
     "category": "aluminum",
-    "image": "/image/Aluminum kitchens/Aluminum kitchens (3).jpeg"
+    "image": "/image/Aluminum kitchens/Aluminum kitchens (3).jpeg",
+    "images": [
+      "/image/Kitchen pictures/kitchen (5)/kitchen (1).jpg",
+      "/image/Kitchen pictures/kitchen (5)/kitchen (2).jpg",
+      "/image/Kitchen pictures/kitchen (5)/kitchen (3).jpg",
+      "/image/Kitchen pictures/kitchen (5)/kitchen (4).jpg",
+      "/image/Kitchen pictures/kitchen (5)/kitchen (5).jpg",
+      "/image/Kitchen pictures/kitchen (5)/kitchen (6).jpg",
+      "/image/Kitchen pictures/kitchen (5)/kitchen (7).jpg",
+      "/image/Kitchen pictures/kitchen (5)/kitchen (8).jpg",
+      "/image/Kitchen pictures/kitchen (5)/kitchen (9).jpg",
+      "/image/Kitchen pictures/kitchen (5)/kitchen (10).jpg",
+      "/image/Kitchen pictures/kitchen (5)/kitchen (11).jpg",
+      "/image/Kitchen pictures/kitchen (5)/kitchen (12).jpg",
+      "/image/Kitchen pictures/kitchen (5)/kitchen (13).jpg",
+      "/image/Kitchen pictures/kitchen (5)/kitchen (14).jpg"
+    ],
+    "materials": "ألمنيوم معزول، رخام فاخر، أجهزة أوروبية عالية الجودة"
   },
   {
     "id": 6,
     "title": "مطبخ خشبي راقي",
     "category": "wooden",
-    "image": "/image/Wooden kitchens/Wooden kitchens (3).jpeg"
+    "image": "/image/Wooden kitchens/Wooden kitchens (3).jpeg",
+    "images": [
+      "/image/Kitchen pictures/kitchen (6)/kitchen (1).jpg",
+      "/image/Kitchen pictures/kitchen (6)/kitchen (2).jpg",
+      "/image/Kitchen pictures/kitchen (6)/kitchen (3).jpg",
+      "/image/Kitchen pictures/kitchen (6)/kitchen (4).jpg",
+      "/image/Kitchen pictures/kitchen (6)/kitchen (5).jpg",
+      "/image/Kitchen pictures/kitchen (6)/kitchen (6).jpg",
+      "/image/Kitchen pictures/kitchen (6)/kitchen (7).jpg",
+      "/image/Kitchen pictures/kitchen (6)/kitchen (8).jpg",
+      "/image/Kitchen pictures/kitchen (6)/kitchen (9).jpg",
+      "/image/Kitchen pictures/kitchen (6)/kitchen (10).jpg"
+    ],
+    "materials": "خشب كرز طبيعي، جرانيت أسود، إكسسوارات ستانليس ستيل"
   },
   {
     "id": 7,
     "title": "تشطيب داخلي متكامل",
     "category": "interior",
-    "image": "/image/Some pictures of kitchens/Some pictures of kitchens (1).jpeg"
+    "image": "/image/Some pictures of kitchens/Some pictures of kitchens (1).jpeg",
+    "images": [
+      "/image/Kitchen pictures/kitchen (7)/kitchen (1).jpg",
+      "/image/Kitchen pictures/kitchen (7)/kitchen (2).jpg",
+      "/image/Kitchen pictures/kitchen (7)/kitchen (3).jpg",
+      "/image/Kitchen pictures/kitchen (7)/kitchen (4).jpg",
+      "/image/Kitchen pictures/kitchen (7)/kitchen (5).jpg",
+      "/image/Kitchen pictures/kitchen (7)/kitchen (6).jpg",
+      "/image/Kitchen pictures/kitchen (7)/kitchen (7).jpg"
+    ],
+    "materials": "مواد تشطيب فاخرة، دهانات مقاومة للماء، أرضيات باركيه"
   },
   {
     "id": 8,
     "title": "مطبخ ألمنيوم مودرن",
     "category": "aluminum",
-    "image": "/image/Aluminum kitchens/Aluminum kitchens (4).jpeg"
+    "image": "/image/Aluminum kitchens/Aluminum kitchens (4).jpeg",
+    "images": [
+      "/image/Aluminum kitchens/Aluminum kitchens (5).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (6).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (7).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (8).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (9).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (10).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (11).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (12).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (13).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (14).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (15).jpeg"
+    ],
+    "materials": "ألمنيوم عالي المقاومة، أسطح كوارتز، أجهزة ذكية"
   },
   {
     "id": 9,
     "title": "مطبخ خشبي أنيق",
     "category": "wooden",
-    "image": "/image/Wooden kitchens/Wooden kitchens (4).jpeg"
+    "image": "/image/Wooden kitchens/Wooden kitchens (4).jpeg",
+    "images": [
+      "/image/Wooden kitchens/Wooden kitchens (5).jpeg",
+      "/image/Wooden kitchens/Wooden kitchens (6).jpeg",
+      "/image/Wooden kitchens/Wooden kitchens (7).jpeg",
+      "/image/Wooden kitchens/Wooden kitchens (8).jpeg",
+      "/image/Wooden kitchens/Wooden kitchens (9).jpeg",
+      "/image/Wooden kitchens/Wooden kitchens (10).jpeg",
+      "/image/Wooden kitchens/Wooden kitchens (11).jpeg",
+      "/image/Wooden kitchens/Wooden kitchens (12).jpeg",
+      "/image/Wooden kitchens/Wooden kitchens (13).jpeg",
+      "/image/Wooden kitchens/Wooden kitchens (14).jpeg",
+      "/image/Wooden kitchens/Wooden kitchens (15).jpeg"
+    ],
+    "materials": "خشب صنوبر طبيعي، رخام كريمي، إكسسوارات برونزية"
+  },
+  {
+    "id": 10,
+    "title": "مطبخ ألمنيوم فاخر 2",
+    "category": "aluminum",
+    "image": "/image/Aluminum kitchens/Aluminum kitchens (16).jpeg",
+    "images": [
+      "/image/Aluminum kitchens/Aluminum kitchens (17).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (18).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (19).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (20).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (21).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (22).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (23).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (24).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (25).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (26).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (27).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (28).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (29).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (30).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (31).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (32).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (33).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (34).jpeg",
+      "/image/Aluminum kitchens/Aluminum kitchens (35).jpeg"
+    ],
+    "materials": "ألمنيوم من الدرجة الأولى، جرانيت إيطالي، أنظمة تخزين ذكية"
+  },
+  {
+    "id": 11,
+    "title": "مكتبة تلفزيون أنيقة",
+    "category": "interior",
+    "image": "/image/TV libraries/TV libraries (1).jpg",
+    "images": [
+      "/image/TV libraries/TV libraries (2).jpg",
+      "/image/TV libraries/TV libraries (3).jpg",
+      "/image/TV libraries/TV libraries (4).jpg",
+      "/image/TV libraries/TV libraries (5).jpg",
+      "/image/TV libraries/TV libraries (6).jpg",
+      "/image/TV libraries/TV libraries (7).jpg",
+      "/image/TV libraries/TV libraries (8).jpg",
+      "/image/TV libraries/TV libraries (9).jpg",
+      "/image/TV libraries/TV libraries (10).jpg",
+      "/image/TV libraries/TV libraries (11).jpg",
+      "/image/TV libraries/TV libraries (12).jpg",
+      "/image/TV libraries/TV libraries (13).jpg",
+      "/image/TV libraries/TV libraries (14).jpg",
+      "/image/TV libraries/TV libraries (15).jpg",
+      "/image/TV libraries/TV libraries (16).jpg"
+    ],
+    "materials": "خشب MDF عالي الجودة، زجاج مقلل للصوت، إضاءة LED مخفية"
+  },
+  {
+    "id": 12,
+    "title": "محل أحذية فاخر",
+    "category": "interior",
+    "image": "/image/Shoe store/Shoe store (1).jpg",
+    "images": [
+      "/image/Shoe store/Shoe store (2).jpg",
+      "/image/Shoe store/Shoe store (3).jpg",
+      "/image/Shoe store/Shoe store (4).jpg",
+      "/image/Shoe store/Shoe store (5).jpg",
+      "/image/Shoe store/Shoe store (6).jpg",
+      "/image/Shoe store/Shoe store (7).jpg",
+      "/image/Shoe store/Shoe store (8).jpg"
+    ],
+    "materials": "أرفف زجاجية، إضاءة متخصصة، أثاث عرض فاخر، أرضيات رخامية"
   }
 ]
-

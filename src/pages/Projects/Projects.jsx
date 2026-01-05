@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { Link } from 'react-router-dom'
 import { FaEye } from 'react-icons/fa'
 import { useLanguage } from '../../context/LanguageContext'
 import { translations } from '../../translations/translations'
-import ImageModal from '../../components/ImageModal/ImageModal'
 import Videos from '../../components/Videos/Videos'
 import PageHero from '../../components/PageHero/PageHero'
 import projectsData from '../../data/projects.json'
@@ -13,8 +13,6 @@ const ProjectsPage = () => {
   const { language } = useLanguage()
   const t = translations[language]
   const [filter, setFilter] = useState('all')
-  const [selectedImage, setSelectedImage] = useState(null)
-  const [selectedIndex, setSelectedIndex] = useState(0)
 
   const categories = [
     { id: 'all', name: t.projects.all },
@@ -28,39 +26,6 @@ const ProjectsPage = () => {
       ? projectsData
       : projectsData.filter((project) => project.category === filter)
 
-  const handleImageClick = (project, index) => {
-    setSelectedIndex(index)
-    setSelectedImage({
-      image: project.image,
-      title: project.title,
-    })
-  }
-
-  const handleCloseModal = () => {
-    setSelectedImage(null)
-  }
-
-  const handleNext = () => {
-    if (selectedIndex < filteredProjects.length - 1) {
-      const nextIndex = selectedIndex + 1
-      setSelectedIndex(nextIndex)
-      setSelectedImage({
-        image: filteredProjects[nextIndex].image,
-        title: filteredProjects[nextIndex].title,
-      })
-    }
-  }
-
-  const handlePrev = () => {
-    if (selectedIndex > 0) {
-      const prevIndex = selectedIndex - 1
-      setSelectedIndex(prevIndex)
-      setSelectedImage({
-        image: filteredProjects[prevIndex].image,
-        title: filteredProjects[prevIndex].title,
-      })
-    }
-  }
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -137,23 +102,24 @@ const ProjectsPage = () => {
                   variants={itemVariants}
                   layout
                 >
-                  <div 
-                    className={styles.projectImageWrapper}
-                    onClick={() => handleImageClick(project, index)}
-                    style={{ cursor: 'pointer' }}
-                  >
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className={styles.projectImage}
-                      loading="lazy"
-                    />
-                    <div className={styles.projectOverlay}>
-                      <div className={styles.projectIcon}>
-                        <FaEye />
+                  <Link to={`/projects/${project.id}`}>
+                    <div 
+                      className={styles.projectImageWrapper}
+                      style={{ cursor: 'pointer' }}
+                    >
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className={styles.projectImage}
+                        loading="lazy"
+                      />
+                      <div className={styles.projectOverlay}>
+                        <div className={styles.projectIcon}>
+                          <FaEye />
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </Link>
                   <div className={styles.projectInfo}>
                     <h3 className={styles.projectTitle}>{project.title}</h3>
                   </div>
@@ -176,18 +142,6 @@ const ProjectsPage = () => {
 
       {/* Videos Section */}
       <Videos showAll={true} />
-
-      {/* Image Modal */}
-      <ImageModal
-        image={selectedImage?.image}
-        title={selectedImage?.title}
-        isOpen={!!selectedImage}
-        onClose={handleCloseModal}
-        onNext={handleNext}
-        onPrev={handlePrev}
-        hasNext={selectedIndex < filteredProjects.length - 1}
-        hasPrev={selectedIndex > 0}
-      />
     </div>
     </>
   )
