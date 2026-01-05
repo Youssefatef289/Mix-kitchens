@@ -382,13 +382,60 @@ html[dir="ltr"] .dropdown {
 }
 
 @media (max-width: 480px) {
-  .logoText {
-    font-size: 1.25rem;
+  .navbar {
+    padding: 0.75rem 0;
+  }
+
+  .navbar.scrolled {
+    padding: 0.5rem 0;
+  }
+
+  .container {
+    padding: 0 1rem;
   }
 
   .logoImg {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .logoText {
+    font-size: clamp(1rem, 3vw, 1.25rem);
+  }
+
+  .mobileMenuButton {
+    padding: 0.25rem;
+  }
+
+  .mobileMenuButton span {
+    width: 22px;
+    height: 2.5px;
+  }
+
+  .mobileMenu {
+    padding: 1rem;
+  }
+
+  .mobileNavLink {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    padding: 0.75rem 0;
+  }
+
+  .mobileDropdownLink {
+    font-size: clamp(0.85rem, 2.5vw, 0.95rem);
+    padding: 0.625rem 1.5rem;
+  }
+
+  .languageButton {
+    padding: 0.4rem 0.75rem;
+    font-size: clamp(0.75rem, 2vw, 0.85rem);
+    min-width: 45px;
+    margin-left: 0.5rem;
+  }
+
+  .ctaButton {
+    padding: 0.5rem 0.875rem;
+    font-size: clamp(0.75rem, 2vw, 0.85rem);
   }
 }
 
