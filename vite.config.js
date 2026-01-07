@@ -15,14 +15,12 @@ export default defineConfig({
     // Disable source maps in production
     sourcemap: false,
     
-    // Minify options
-    minify: 'terser',
-    terserOptions: {
-      compress: {
-        // Remove console.log in production
-        drop_console: true,
-        drop_debugger: true,
-      },
+    // Minify options (using esbuild - faster and built-in)
+    minify: 'esbuild',
+    
+    // Remove console.log and debugger in production
+    esbuild: {
+      drop: ['console', 'debugger'],
     },
     
     // Chunk size warning limit
