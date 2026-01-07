@@ -89,6 +89,49 @@
   margin: 0;
 }
 
+.branchesSection {
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+  margin-bottom: 2rem;
+}
+
+.branchesSection h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.branchesList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.branchItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-text-light);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.branchItem:hover {
+  background-color: var(--color-light-gray);
+  border-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.branchIcon {
+  font-size: 1.25rem;
+  color: var(--color-secondary);
+  min-width: 24px;
+}
+
 .socialMedia {
   padding-top: 2rem;
   border-top: 1px solid #e0e0e0;

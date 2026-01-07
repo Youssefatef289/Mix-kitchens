@@ -6,8 +6,6 @@ import {
   FaMapMarkerAlt,
   FaFacebookF,
   FaInstagram,
-  FaTwitter,
-  FaLinkedin,
   FaWhatsapp,
   FaHeart
 } from 'react-icons/fa'
@@ -34,8 +32,6 @@ const Footer = () => {
     { name: 'Facebook', icon: FaFacebookF, href: 'https://www.facebook.com/share/14SyQYXurmS/?mibextid=wwXIfr' },
     { name: 'WhatsApp', icon: FaWhatsapp, href: 'https://wa.me/2001008705606' },
     { name: 'Instagram', icon: FaInstagram, href: 'https://www.instagram.com/yourpage' },
-    { name: 'Twitter', icon: FaTwitter, href: 'https://www.twitter.com/yourpage' },
-    { name: 'LinkedIn', icon: FaLinkedin, href: 'https://www.linkedin.com/company/yourpage' },
   ]
 
   const handleLinkClick = (e, path) => {
@@ -119,7 +115,7 @@ const Footer = () => {
                 <span className={styles.contactIcon}>
                   <FaEnvelope />
                 </span>
-                <span>info@mix.com</span>
+                <a href="mailto:ahmeddreda1994@gmail.com" className={styles.contactLink}>ahmeddreda1994@gmail.com</a>
               </li>
             </ul>
           </motion.div>

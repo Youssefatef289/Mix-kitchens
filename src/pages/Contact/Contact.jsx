@@ -7,8 +7,6 @@ import {
   FaClock,
   FaFacebookF,
   FaInstagram,
-  FaTwitter,
-  FaLinkedin,
   FaWhatsapp
 } from 'react-icons/fa'
 import { useLanguage } from '../../context/LanguageContext'
@@ -58,14 +56,14 @@ const ContactPage = () => {
     {
       icon: FaEnvelope,
       title: t.contact.email,
-      value: 'info@mix.com',
-      link: 'mailto:info@mix.com',
+      value: 'ahmeddreda1994@gmail.com',
+      link: 'mailto:ahmeddreda1994@gmail.com',
     },
     {
       icon: FaPhone,
       title: t.contact.phone,
-      value: '+966 50 123 4567',
-      link: 'tel:+966501234567',
+      value: '01008705606',
+      link: 'tel:01008705606',
     },
     {
       icon: FaMapMarkerAlt,
@@ -82,11 +80,28 @@ const ContactPage = () => {
   ]
 
   const socialIcons = [
-    { icon: FaFacebookF, href: 'https://www.facebook.com/yourpage', name: 'Facebook' },
+    { icon: FaFacebookF, href: 'https://www.facebook.com/share/14SyQYXurmS/?mibextid=wwXIfr', name: 'Facebook' },
     { icon: FaInstagram, href: 'https://www.instagram.com/yourpage', name: 'Instagram' },
-    { icon: FaTwitter, href: 'https://www.twitter.com/yourpage', name: 'Twitter' },
-    { icon: FaLinkedin, href: 'https://www.linkedin.com/company/yourpage', name: 'LinkedIn' },
-    { icon: FaWhatsapp, href: 'https://wa.me/966501234567', name: 'WhatsApp' },
+    { icon: FaWhatsapp, href: 'https://wa.me/2001008705606', name: 'WhatsApp' },
+  ]
+
+  const branches = [
+    {
+      title: t.footer.branch1,
+      mapLink: t.footer.branch1Map,
+    },
+    {
+      title: t.footer.branch2,
+      mapLink: t.footer.branch2Map,
+    },
+    {
+      title: t.footer.branch3,
+      mapLink: t.footer.branch3Map,
+    },
+    {
+      title: t.footer.factory,
+      mapLink: t.footer.factoryMap,
+    },
   ]
 
   return (
@@ -135,6 +150,27 @@ const ContactPage = () => {
                     </motion.a>
                   )
                 })}
+              </div>
+
+              {/* Branches */}
+              <div className={styles.branchesSection}>
+                <h3>{t.footer.branchesTitle}</h3>
+                <div className={styles.branchesList}>
+                  {branches.map((branch, index) => (
+                    <motion.a
+                      key={index}
+                      href={branch.mapLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.branchItem}
+                      whileHover={{ scale: 1.02, x: 5 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <FaMapMarkerAlt className={styles.branchIcon} />
+                      <span>{branch.title}</span>
+                    </motion.a>
+                  ))}
+                </div>
               </div>
 
               {/* Social Media */}
