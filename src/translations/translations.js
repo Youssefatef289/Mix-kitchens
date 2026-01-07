@@ -335,6 +335,12 @@ export const translations = {
       feature2: 'High quality materials',
       feature3: 'Professional implementation',
       feature4: 'Comprehensive warranty',
+      kitchens: 'Kitchens',
+      kitchensDescription: 'Explore our diverse collection of luxurious kitchens',
+      dressingRoom: 'Dressing Room',
+      dressingRoomDescription: 'Elegant dressing room designs',
+      tvRoom: 'TV Libraries',
+      tvRoomDescription: 'Modern TV library designs',
     },
     // Dressing Room
     dressingRoom: {
