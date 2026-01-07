@@ -2,32 +2,79 @@
   {
     "id": 1,
     "title": "دريسنج روم فاخر",
-    "image": "/image/Dressing Room/Dressing Room (1).jpeg"
+    "image": "/image/Dreessing Room/Dressing Room (1).jpeg",
+    "images": [
+      "/image/Dreessing Room/Dressing Room (1).jpeg",
+      "/image/Dreessing Room/Dressing Room (1).jpg"
+    ]
   },
   {
     "id": 2,
     "title": "دريسنج روم عصري",
-    "image": "/image/Dressing Room/Dressing Room (2).jpeg"
+    "image": "/image/Dreessing Room/Dressing Room (2).jpeg",
+    "images": [
+      "/image/Dreessing Room/Dressing Room (2).jpeg",
+      "/image/Dreessing Room/Dressing Room (2).jpg"
+    ]
   },
   {
     "id": 3,
     "title": "دريسنج روم كلاسيكي",
-    "image": "/image/Dressing Room/Dressing Room (3).jpeg"
+    "image": "/image/Dreessing Room/Dressing Room (3).jpeg",
+    "images": [
+      "/image/Dreessing Room/Dressing Room (3).jpeg",
+      "/image/Dreessing Room/Dressing Room (3).jpg"
+    ]
   },
   {
     "id": 4,
     "title": "دريسنج روم أنيق",
-    "image": "/image/Dressing Room/Dressing Room (4).jpeg"
+    "image": "/image/Dreessing Room/Dressing Room (4).jpeg",
+    "images": [
+      "/image/Dreessing Room/Dressing Room (4).jpeg",
+      "/image/Dreessing Room/Dressing Room (4).jpg"
+    ]
   },
   {
     "id": 5,
     "title": "دريسنج روم راقي",
-    "image": "/image/Dressing Room/Dressing Room (5).jpeg"
+    "image": "/image/Dreessing Room/Dressing Room (5).jpeg",
+    "images": [
+      "/image/Dreessing Room/Dressing Room (5).jpeg",
+      "/image/Dreessing Room/Dressing Room (5).jpg"
+    ]
   },
   {
     "id": 6,
     "title": "دريسنج روم مودرن",
-    "image": "/image/Dressing Room/Dressing Room (6).jpeg"
+    "image": "/image/Dreessing Room/Dressing Room (6).jpeg",
+    "images": [
+      "/image/Dreessing Room/Dressing Room (6).jpeg",
+      "/image/Dreessing Room/Dressing Room (6).jpg"
+    ]
+  },
+  {
+    "id": 7,
+    "title": "دريسنج روم فاخر 2",
+    "image": "/image/Dreessing Room/Dressing Room (7).jpeg",
+    "images": [
+      "/image/Dreessing Room/Dressing Room (7).jpeg"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "دريسنج روم أنيق 2",
+    "image": "/image/Dreessing Room/Dressing Room (8).jpeg",
+    "images": [
+      "/image/Dreessing Room/Dressing Room (8).jpeg"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "دريسنج روم راقي 2",
+    "image": "/image/Dreessing Room/Dressing Room (9).jpeg",
+    "images": [
+      "/image/Dreessing Room/Dressing Room (9).jpeg"
+    ]
   }
 ]
-
