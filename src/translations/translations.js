@@ -101,6 +101,12 @@ export const translations = {
       feature2: 'مواد عالية الجودة',
       feature3: 'تنفيذ احترافي',
       feature4: 'ضمان شامل',
+      kitchens: 'المطابخ',
+      kitchensDescription: 'استكشف مجموعتنا المتنوعة من المطابخ الفاخرة',
+      dressingRoom: 'الدريسنج روم',
+      dressingRoomDescription: 'تصاميم أنيقة للدريسنج روم',
+      tvRoom: 'مكتبات التلفزيون',
+      tvRoomDescription: 'تصاميم عصرية لمكتبات التلفزيون',
     },
     // Dressing Room
     dressingRoom: {

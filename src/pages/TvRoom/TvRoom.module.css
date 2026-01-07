@@ -1,14 +1,13 @@
-.dressingRoomPage {
+.tvRoomPage {
   min-height: 100vh;
-  
 }
 
 .descriptionSection {
   padding: 3rem 0;
-  background: white;
+  background: var(--color-white);
 }
 
-.dressingRoomSection {
+.tvRoomSection {
   padding: 5rem 0;
   background: linear-gradient(
     to bottom,
@@ -32,39 +31,38 @@
   margin: 0 auto;
 }
 
-.dressingRoomGrid {
+.tvRoomGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
 }
 
-.dressingRoomCard {
+.tvRoomCard {
   position: relative;
-  border-radius: 5px;
+  border-radius: 12px;
   overflow: hidden;
-  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   background-color: var(--color-white);
   display: flex;
   flex-direction: column;
 }
 
-.dressingRoomCard:hover {
+.tvRoomCard:hover {
   transform: translateY(-5px);
-  /* box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
-.dressingRoomImageWrapper {
+.tvRoomImageWrapper {
   position: relative;
   width: 100%;
-  height: 350px;
   padding-top: 75%;
   overflow: hidden;
-  /* background-color: var(--color-dark-gray); */
+  background-color: var(--color-dark-gray);
   cursor: pointer;
 }
 
-.dressingRoomImage {
+.tvRoomImage {
   position: absolute;
   top: 0;
   left: 0;
@@ -74,17 +72,17 @@
   transition: transform 0.5s ease;
 }
 
-.dressingRoomCard:hover .dressingRoomImage {
+.tvRoomCard:hover .tvRoomImage {
   transform: scale(1.1);
 }
 
-.dressingRoomOverlay {
+.tvRoomOverlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* background: rgba(26, 26, 26, 0.4); */
+  background: rgba(26, 26, 26, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,16 +90,16 @@
   transition: opacity 0.3s ease;
 }
 
-.dressingRoomCard:hover .dressingRoomOverlay {
+.tvRoomCard:hover .tvRoomOverlay {
   opacity: 1;
 }
 
-.dressingRoomInfo {
+.tvRoomInfo {
   padding: 1.5rem;
-  background-color: white;
+  background-color: var(--color-white);
 }
 
-.dressingRoomTitle {
+.tvRoomTitle {
   color: var(--color-primary);
   font-size: 1.25rem;
   font-weight: 700;
@@ -110,18 +108,18 @@
   transition: color 0.3s ease;
 }
 
-.dressingRoomCard:hover .dressingRoomTitle {
+.tvRoomCard:hover .tvRoomTitle {
   color: var(--color-secondary);
 }
 
-.dressingRoomIcon {
+.tvRoomIcon {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 60px;
   height: 60px;
-  background-color: white;
+  background-color: var(--color-secondary);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -131,14 +129,14 @@
   transition: all 0.3s ease;
 }
 
-.dressingRoomCard:hover .dressingRoomIcon {
+.tvRoomCard:hover .tvRoomIcon {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .dressingRoomSection {
+  .tvRoomSection {
     padding: 3rem 0;
   }
 
@@ -150,7 +148,7 @@
     padding: 0 1rem;
   }
 
-  .dressingRoomGrid {
+  .tvRoomGrid {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1.5rem;
   }
@@ -162,7 +160,7 @@
 }
 
 @media (max-width: 480px) {
-  .dressingRoomGrid {
+  .tvRoomGrid {
     grid-template-columns: 1fr;
   }
 }

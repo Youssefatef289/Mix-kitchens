@@ -8,6 +8,7 @@ import ServicesPage from './pages/Services/Services'
 import ProjectsPage from './pages/Projects/Projects'
 import ProjectDetails from './pages/ProjectDetails/ProjectDetails'
 import DressingRoomPage from './pages/DressingRoom/DressingRoom'
+import TvRoomPage from './pages/TvRoom/TvRoom'
 import ContactPage from './pages/Contact/Contact'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="projects" element={<ProjectsPage />} />
               <Route path="projects/:id" element={<ProjectDetails />} />
               <Route path="dressing-room" element={<DressingRoomPage />} />
+              <Route path="tv-room" element={<TvRoomPage />} />
             <Route path="contact" element={<ContactPage />} />
           </Route>
         </Routes>

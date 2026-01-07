@@ -14,41 +14,33 @@ const Projects = () => {
   const [selectedImage, setSelectedImage] = useState(null)
   const [selectedIndex, setSelectedIndex] = useState(0)
 
-  // Show only first 3 projects
-  const displayedProjects = projectsData.slice(0, 3)
-
-  const handleImageClick = (project, index) => {
-    setSelectedIndex(index)
-    setSelectedImage({
-      image: project.image,
-      title: project.title,
-    })
-  }
-
-  const handleCloseModal = () => {
-    setSelectedImage(null)
-  }
-
-  const handleNext = () => {
-    if (selectedIndex < displayedProjects.length - 1) {
-      const nextIndex = selectedIndex + 1
-      setSelectedIndex(nextIndex)
-      setSelectedImage({
-        image: displayedProjects[nextIndex].image,
-        title: displayedProjects[nextIndex].title,
-      })
+  // Category cards for homepage
+  const categoryCards = [
+    {
+      id: 'kitchens',
+      title: t.projects.kitchens || 'المطابخ',
+      image: '/image/Kitchen pictures/kitchen/kitchen (1).jpg',
+      link: '/projects',
+      description: t.projects.kitchensDescription || 'استكشف مجموعتنا المتنوعة من المطابخ الفاخرة'
+    },
+    {
+      id: 'dressing-room',
+      title: t.projects.dressingRoom || 'الدريسنج روم',
+      image: '/image/Dreessing Room/Dressing Room (1).jpeg',
+      link: '/dressing-room',
+      description: t.projects.dressingRoomDescription || 'تصاميم أنيقة للدريسنج روم'
+    },
+    {
+      id: 'tv-room',
+      title: t.projects.tvRoom || 'مكتبات التلفزيون',
+      image: '/image/Tv room design/TV libraries (1).jpg',
+      link: '/tv-room',
+      description: t.projects.tvRoomDescription || 'تصاميم عصرية لمكتبات التلفزيون'
     }
-  }
+  ]
 
-  const handlePrev = () => {
-    if (selectedIndex > 0) {
-      const prevIndex = selectedIndex - 1
-      setSelectedIndex(prevIndex)
-      setSelectedImage({
-        image: displayedProjects[prevIndex].image,
-        title: displayedProjects[prevIndex].title,
-      })
-    }
+  const handleCardClick = (link) => {
+    // Navigation will be handled by Link component
   }
 
   const containerVariants = {
@@ -94,7 +86,7 @@ const Projects = () => {
           </p>
         </motion.div>
 
-        {/* Projects Grid */}
+        {/* Category Cards Grid */}
         <motion.div
           className={styles.projectsGrid}
           variants={containerVariants}
@@ -102,32 +94,34 @@ const Projects = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {displayedProjects.map((project, index) => (
+          {categoryCards.map((card, index) => (
             <motion.div
-              key={project.id}
+              key={card.id}
               className={styles.projectCard}
               variants={itemVariants}
             >
-              <div 
-                className={styles.projectImageWrapper}
-                onClick={() => handleImageClick(project, index)}
-                style={{ cursor: 'pointer' }}
-              >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className={styles.projectImage}
-                  loading="lazy"
-                />
-                <div className={styles.projectOverlay}>
-                  <div className={styles.projectIcon}>
-                    <FaEye />
+              <Link to={card.link} onClick={() => handleCardClick(card.link)}>
+                <div 
+                  className={styles.projectImageWrapper}
+                  style={{ cursor: 'pointer' }}
+                >
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className={styles.projectImage}
+                    loading="lazy"
+                  />
+                  <div className={styles.projectOverlay}>
+                    <div className={styles.projectIcon}>
+                      <FaEye />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className={styles.projectInfo}>
-                <h3 className={styles.projectTitle}>{project.title}</h3>
-              </div>
+                <div className={styles.projectInfo}>
+                  <h3 className={styles.projectTitle}>{card.title}</h3>
+                  <p className={styles.projectDescription}>{card.description}</p>
+                </div>
+              </Link>
             </motion.div>
           ))}
         </motion.div>
@@ -146,17 +140,6 @@ const Projects = () => {
         </motion.div>
       </div>
 
-      {/* Image Modal */}
-      <ImageModal
-        image={selectedImage?.image}
-        title={selectedImage?.title}
-        isOpen={!!selectedImage}
-        onClose={handleCloseModal}
-        onNext={handleNext}
-        onPrev={handlePrev}
-        hasNext={selectedIndex < displayedProjects.length - 1}
-        hasPrev={selectedIndex > 0}
-      />
     </section>
   )
 }
