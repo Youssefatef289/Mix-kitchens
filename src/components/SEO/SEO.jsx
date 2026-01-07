@@ -7,7 +7,8 @@ const SEO = () => {
   const location = useLocation()
   const { language } = useLanguage()
   const t = translations[language]
-  const baseUrl = 'https://mix-kitchens.vercel.app'
+  // Use current origin for base URL (works on any domain)
+  const baseUrl = typeof window !== 'undefined' ? window.location.origin : ''
 
   useEffect(() => {
     const updateMetaTags = () => {
