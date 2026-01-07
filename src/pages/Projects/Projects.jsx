@@ -7,6 +7,7 @@ import { translations } from '../../translations/translations'
 import Videos from '../../components/Videos/Videos'
 import PageHero from '../../components/PageHero/PageHero'
 import projectsData from '../../data/projects.json'
+import kitchenProjectsData from '../../data/kitchenProjects.json'
 import styles from './Projects.module.css'
 
 const ProjectsPage = () => {
@@ -16,15 +17,23 @@ const ProjectsPage = () => {
 
   const categories = [
     { id: 'all', name: t.projects.all },
+    { id: 'kitchen', name: t.projects.kitchens || 'المطابخ' },
     { id: 'aluminum', name: t.projects.aluminum },
     { id: 'wooden', name: t.projects.wooden },
     { id: 'interior', name: t.projects.interior },
   ]
 
+  // Combine kitchen projects with regular projects
+  const allProjects = filter === 'kitchen' 
+    ? kitchenProjectsData 
+    : projectsData
+
   const filteredProjects =
     filter === 'all'
-      ? projectsData
-      : projectsData.filter((project) => project.category === filter)
+      ? [...kitchenProjectsData, ...projectsData]
+      : filter === 'kitchen'
+      ? kitchenProjectsData
+      : allProjects.filter((project) => project.category === filter)
 
 
   const containerVariants = {

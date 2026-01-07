@@ -7,6 +7,7 @@ import { translations } from '../../translations/translations'
 import PageHero from '../../components/PageHero/PageHero'
 import ImageModal from '../../components/ImageModal/ImageModal'
 import projectsData from '../../data/projects.json'
+import kitchenProjectsData from '../../data/kitchenProjects.json'
 import styles from './ProjectDetails.module.css'
 
 const ProjectDetails = () => {
@@ -18,7 +19,13 @@ const ProjectDetails = () => {
   const [selectedIndex, setSelectedIndex] = useState(0)
   const [mainImageIndex, setMainImageIndex] = useState(0)
   
-  const project = projectsData.find(p => p.id === parseInt(id))
+  // Check if it's a kitchen project (string ID) or regular project (numeric ID)
+  const isKitchenProject = id && id.startsWith('kitchen-')
+  const allProjects = isKitchenProject ? kitchenProjectsData : projectsData
+  
+  const project = isKitchenProject
+    ? allProjects.find(p => p.id === id)
+    : allProjects.find(p => p.id === parseInt(id))
   
   // Get all images for this project (use images array if available, otherwise use single image)
   const projectImages = project?.images && project.images.length > 0 
