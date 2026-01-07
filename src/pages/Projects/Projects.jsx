@@ -35,6 +35,29 @@ const ProjectsPage = () => {
       ? kitchenProjectsData
       : allProjects.filter((project) => project.category === filter)
 
+  // Get hero title and description based on filter
+  const getHeroTitle = () => {
+    if (filter === 'kitchen') {
+      return t.projects.kitchens || 'المطابخ'
+    }
+    if (filter === 'aluminum') {
+      return t.projects.aluminum
+    }
+    if (filter === 'wooden') {
+      return t.projects.wooden
+    }
+    if (filter === 'interior') {
+      return t.projects.interior
+    }
+    return t.projects.title
+  }
+
+  const getHeroDescription = () => {
+    if (filter === 'kitchen') {
+      return t.projects.kitchensDescription || 'استكشف مجموعتنا المتنوعة من المطابخ الفاخرة'
+    }
+    return t.projects.subtitle2
+  }
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -67,8 +90,8 @@ const ProjectsPage = () => {
   return (
     <>
       <PageHero
-        title={t.projects.title}
-        description={t.projects.subtitle2}
+        title={getHeroTitle()}
+        description={getHeroDescription()}
       />
       <div className={styles.projectsPage}>
 
