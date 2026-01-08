@@ -36,6 +36,13 @@ const Projects = () => {
       image: '/image/Tv room design/TV libraries (1).jpg',
       link: '/tv-room',
       description: t.projects.tvRoomDescription || 'تصاميم عصرية لمكتبات التلفزيون'
+    },
+    {
+      id: 'shoe-store',
+      title: language === 'ar' ? 'محل أحذية فاخر' : 'Luxury Shoe Store',
+      image: '/image/Shoe store/Shoe store (1).jpg',
+      link: '/projects/12',
+      description: language === 'ar' ? 'تصاميم فاخرة لمحلات الأحذية' : 'Luxury shoe store designs'
     }
   ]
 

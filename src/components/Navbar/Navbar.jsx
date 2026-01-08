@@ -31,6 +31,7 @@ const Navbar = ({ isTransparent = false, hasHero = false }) => {
   const projectsDropdownItems = [
     { name: t.nav.kitchens, path: '/projects' },
     { name: t.nav.dressingRoom, path: '/dressing-room' },
+    { name: t.nav.tvRoom, path: '/tv-room' },
   ]
 
   const handleLinkClick = (e, path) => {
