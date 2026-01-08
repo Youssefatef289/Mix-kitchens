@@ -227,9 +227,6 @@ const Footer = () => {
           <p>
             © {currentYear} Mix. {t.footer.rights}.
           </p>
-          <p className={styles.madeWith}>
-            {t.footer.madeWith} <FaHeart style={{ color: '#E91E63', display: 'inline' }} /> {t.footer.madeWith2}
-          </p>
           <p className={styles.designer}>
             {t.footer.designer}{' '}
             <a 
