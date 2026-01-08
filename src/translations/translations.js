@@ -222,6 +222,8 @@ export const translations = {
       rights: 'جميع الحقوق محفوظة',
       madeWith: 'مصمم ومطور بـ',
       madeWith2: 'لتحقيق رؤيتك',
+      designer: 'مصمم ومطور',
+      designerName: 'يوسف عاطف',
       branchesTitle: 'فروعنا',
       branch1: 'الفرع الأول: بجوار النادي الرياضي، كورنيش النيل',
       branch1Map: 'https://maps.app.goo.gl/dhRJDWz5D2QdBqnW8',
