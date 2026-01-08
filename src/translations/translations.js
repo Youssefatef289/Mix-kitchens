@@ -459,6 +459,8 @@ export const translations = {
       rights: 'All rights reserved',
       madeWith: 'Designed and developed with',
       madeWith2: 'to achieve your vision',
+      designer: 'Designed & Developed by',
+      designerName: 'Youssef Atef',
       branchesTitle: 'Our Branches',
       branch1: 'Branch 1: Next to the Sports Club, Nile Corniche',
       branch1Map: 'https://maps.app.goo.gl/dhRJDWz5D2QdBqnW8',
