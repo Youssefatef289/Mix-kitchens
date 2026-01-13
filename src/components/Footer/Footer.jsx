@@ -30,7 +30,7 @@ const Footer = () => {
 
   const socialMedia = [
     { name: 'Facebook', icon: FaFacebookF, href: 'https://www.facebook.com/share/14SyQYXurmS/?mibextid=wwXIfr' },
-    { name: 'WhatsApp', icon: FaWhatsapp, href: 'https://wa.me/2001008705606' },
+    { name: 'WhatsApp', icon: FaWhatsapp, href: 'https://wa.me/201070881743' },
     { name: 'Instagram', icon: FaInstagram, href: 'https://www.instagram.com/yourpage' },
   ]
 
@@ -109,7 +109,7 @@ const Footer = () => {
                 <span className={styles.contactIcon}>
                   <FaWhatsapp />
                 </span>
-                <a href="https://wa.me/2001008705606" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>واتساب: 01008705606</a>
+                <a href="https://wa.me/201070881743" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>واتساب: 01070881743</a>
               </li>
               <li>
                 <span className={styles.contactIcon}>

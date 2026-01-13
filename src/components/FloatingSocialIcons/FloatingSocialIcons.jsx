@@ -49,7 +49,7 @@ const FloatingSocialIcons = () => {
         </a>
 
         <a 
-          href="https://wa.me/2001008705606" 
+          href="https://wa.me/201070881743" 
           className={`${styles.socialLink} ${styles.whatsappColor}`}
           target="_blank"
           rel="noopener noreferrer"

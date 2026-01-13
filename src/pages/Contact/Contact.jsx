@@ -82,7 +82,7 @@ const ContactPage = () => {
   const socialIcons = [
     { icon: FaFacebookF, href: 'https://www.facebook.com/share/14SyQYXurmS/?mibextid=wwXIfr', name: 'Facebook' },
     { icon: FaInstagram, href: 'https://www.instagram.com/yourpage', name: 'Instagram' },
-    { icon: FaWhatsapp, href: 'https://wa.me/2001008705606', name: 'WhatsApp' },
+    { icon: FaWhatsapp, href: 'https://wa.me/201070881743', name: 'WhatsApp' },
   ]
 
   const branches = [
