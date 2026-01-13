@@ -11,7 +11,7 @@ export const translations = {
       tvRoom: 'مكتبة تلفزيونية أنيقة',
       contact: 'تواصل معنا',
       cta: 'اطلب معاينة',
-      ctaWithPhone: 'اطلب معاينة: 01008705606',
+      ctaWithPhone: 'اطلب معاينة: 01008705606 - 01070881741',
     },
     // Hero
     hero: {
@@ -248,7 +248,7 @@ export const translations = {
       tvRoom: 'Elegant TV Library',
       contact: 'Contact Us',
       cta: 'Request Visit',
-      ctaWithPhone: 'Request Visit: 01008705606',
+      ctaWithPhone: 'Request Visit: 01008705606 - 01070881741',
     },
     // Hero
     hero: {
