@@ -89,18 +89,22 @@ const ContactPage = () => {
     {
       title: t.footer.branch1,
       mapLink: t.footer.branch1Map,
+      phone: '01070881743',
     },
     {
       title: t.footer.branch2,
       mapLink: t.footer.branch2Map,
+      phone: '01070881742',
     },
     {
       title: t.footer.branch3,
       mapLink: t.footer.branch3Map,
+      phone: '01070881741',
     },
     {
       title: t.footer.factory,
       mapLink: t.footer.factoryMap,
+      phone: '0109769177',
     },
   ]
 
@@ -157,18 +161,33 @@ const ContactPage = () => {
                 <h3>{t.footer.branchesTitle}</h3>
                 <div className={styles.branchesList}>
                   {branches.map((branch, index) => (
-                    <motion.a
+                    <motion.div
                       key={index}
-                      href={branch.mapLink}
-                      target="_blank"
-                      rel="noopener noreferrer"
                       className={styles.branchItem}
                       whileHover={{ scale: 1.02, x: 5 }}
                       transition={{ duration: 0.2 }}
                     >
-                      <FaMapMarkerAlt className={styles.branchIcon} />
-                      <span>{branch.title}</span>
-                    </motion.a>
+                      <div className={styles.branchContent}>
+                        <motion.a
+                          href={branch.mapLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={styles.branchLink}
+                        >
+                          <FaMapMarkerAlt className={styles.branchIcon} />
+                          <span>{branch.title}</span>
+                        </motion.a>
+                        <motion.a
+                          href={`tel:${branch.phone}`}
+                          className={styles.branchPhone}
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.95 }}
+                        >
+                          <FaPhone className={styles.phoneIcon} />
+                          <span>{branch.phone}</span>
+                        </motion.a>
+                      </div>
+                    </motion.div>
                   ))}
                 </div>
               </div>
