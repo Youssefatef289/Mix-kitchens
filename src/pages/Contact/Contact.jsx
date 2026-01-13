@@ -62,7 +62,7 @@ const ContactPage = () => {
     {
       icon: FaPhone,
       title: t.contact.phone,
-      value: '01008705606',
+      value: '01008705606 - 01070881741',
       link: 'tel:01008705606',
     },
     {
