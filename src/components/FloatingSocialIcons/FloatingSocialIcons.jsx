@@ -7,7 +7,8 @@ import {
 import { 
   SiFacebook,
   SiWhatsapp,
-  SiInstagram
+  SiInstagram,
+  SiTiktok
 } from 'react-icons/si'
 import { useLanguage } from '../../context/LanguageContext'
 import { translations } from '../../translations/translations'
@@ -77,6 +78,16 @@ const FloatingSocialIcons = () => {
           aria-label="إنستجرام"
         >
           <SiInstagram />
+        </a>
+
+        <a 
+          href="https://www.tiktok.com/@mix.kitchen?_r=1&_t=ZS-932XGy9JxsS" 
+          className={`${styles.socialLink} ${styles.tiktokColor}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="تيك توك"
+        >
+          <SiTiktok />
         </a>
       </div>
     </div>

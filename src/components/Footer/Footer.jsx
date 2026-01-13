@@ -9,6 +9,7 @@ import {
   FaWhatsapp,
   FaHeart
 } from 'react-icons/fa'
+import { SiTiktok } from 'react-icons/si'
 import { Link, useNavigate } from 'react-router-dom'
 import { useLanguage } from '../../context/LanguageContext'
 import { translations } from '../../translations/translations'
@@ -32,6 +33,7 @@ const Footer = () => {
     { name: 'Facebook', icon: FaFacebookF, href: 'https://www.facebook.com/share/14SyQYXurmS/?mibextid=wwXIfr' },
     { name: 'WhatsApp', icon: FaWhatsapp, href: 'https://wa.me/201070881743' },
     { name: 'Instagram', icon: FaInstagram, href: 'https://www.instagram.com/mix25hurg?igsh=MTMxc3RpM3M4MzU1cw==' },
+    { name: 'TikTok', icon: SiTiktok, href: 'https://www.tiktok.com/@mix.kitchen?_r=1&_t=ZS-932XGy9JxsS' },
   ]
 
   const handleLinkClick = (e, path) => {

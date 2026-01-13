@@ -112,6 +112,10 @@
   bottom: 240px;
 }
 
+.mainButton.open ~ .tiktokColor {
+  bottom: 300px;
+}
+
 .phoneColor {
   background: linear-gradient(0deg, #34C759, #4cd964);
 }
@@ -126,6 +130,10 @@
 
 .instagramColor {
   background: linear-gradient(0deg, #E4405F, #F56040);
+}
+
+.tiktokColor {
+  background: linear-gradient(0deg, #000000, #161823);
 }
 
 .wave {
@@ -192,6 +200,10 @@
   .mainButton.open ~ .instagramColor {
     bottom: 220px;
   }
+
+  .mainButton.open ~ .tiktokColor {
+    bottom: 275px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -236,5 +248,9 @@
 
   .mainButton.open ~ .instagramColor {
     bottom: 200px;
+  }
+
+  .mainButton.open ~ .tiktokColor {
+    bottom: 250px;
   }
 }

@@ -9,6 +9,7 @@ import {
   FaInstagram,
   FaWhatsapp
 } from 'react-icons/fa'
+import { SiTiktok } from 'react-icons/si'
 import { useLanguage } from '../../context/LanguageContext'
 import { translations } from '../../translations/translations'
 import PageHero from '../../components/PageHero/PageHero'
@@ -83,6 +84,7 @@ const ContactPage = () => {
     { icon: FaFacebookF, href: 'https://www.facebook.com/share/14SyQYXurmS/?mibextid=wwXIfr', name: 'Facebook' },
     { icon: FaInstagram, href: 'https://www.instagram.com/mix25hurg?igsh=MTMxc3RpM3M4MzU1cw==', name: 'Instagram' },
     { icon: FaWhatsapp, href: 'https://wa.me/201070881743', name: 'WhatsApp' },
+    { icon: SiTiktok, href: 'https://www.tiktok.com/@mix.kitchen?_r=1&_t=ZS-932XGy9JxsS', name: 'TikTok' },
   ]
 
   const branches = [
