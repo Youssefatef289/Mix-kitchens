@@ -31,7 +31,7 @@ const Footer = () => {
   const socialMedia = [
     { name: 'Facebook', icon: FaFacebookF, href: 'https://www.facebook.com/share/14SyQYXurmS/?mibextid=wwXIfr' },
     { name: 'WhatsApp', icon: FaWhatsapp, href: 'https://wa.me/201070881743' },
-    { name: 'Instagram', icon: FaInstagram, href: 'https://www.instagram.com/yourpage' },
+    { name: 'Instagram', icon: FaInstagram, href: 'https://www.instagram.com/mix25hurg?igsh=MTMxc3RpM3M4MzU1cw==' },
   ]
 
   const handleLinkClick = (e, path) => {

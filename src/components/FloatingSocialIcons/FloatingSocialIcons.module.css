@@ -108,6 +108,10 @@
   bottom: 180px;
 }
 
+.mainButton.open ~ .instagramColor {
+  bottom: 240px;
+}
+
 .phoneColor {
   background: linear-gradient(0deg, #34C759, #4cd964);
 }
@@ -118,6 +122,10 @@
 
 .messengerColor {
   background: linear-gradient(0deg, #0078FF, #00C6FF);
+}
+
+.instagramColor {
+  background: linear-gradient(0deg, #E4405F, #F56040);
 }
 
 .wave {
@@ -180,6 +188,10 @@
   .mainButton.open ~ .messengerColor {
     bottom: 165px;
   }
+
+  .mainButton.open ~ .instagramColor {
+    bottom: 220px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -208,5 +220,21 @@
 
   .mainButton.open ~ .consultationButton {
     right: 50px;
+  }
+
+  .mainButton.open ~ .phoneColor {
+    bottom: 50px;
+  }
+
+  .mainButton.open ~ .whatsappColor {
+    bottom: 100px;
+  }
+
+  .mainButton.open ~ .messengerColor {
+    bottom: 150px;
+  }
+
+  .mainButton.open ~ .instagramColor {
+    bottom: 200px;
   }
 }
