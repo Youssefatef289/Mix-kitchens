@@ -33,7 +33,7 @@ const Projects = () => {
     {
       id: 'tv-room',
       title: t.projects.tvRoom || 'مكتبات التلفزيون',
-      image: '/image/Tv room design/TV libraries (1).jpg',
+      image: '/image/Tv room design/tv room design modern (1).jpeg',
       link: '/tv-room',
       description: t.projects.tvRoomDescription || 'تصاميم عصرية لمكتبات التلفزيون'
     },
