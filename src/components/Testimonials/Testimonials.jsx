@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+import { FaChevronLeft, FaChevronRight, FaStar } from 'react-icons/fa'
 import { useLanguage } from '../../context/LanguageContext'
 import { translations } from '../../translations/translations'
 import testimonialsData from '../../data/testimonials.json'
@@ -79,6 +79,9 @@ const Testimonials = ({ showMultiple = false }) => {
           className={styles.header}
         >
           <h2 className={styles.sectionTitle}>{t.testimonials.title}</h2>
+          {t.testimonials.subtitle && (
+            <p className={styles.sectionSubtitle}>{t.testimonials.subtitle}</p>
+          )}
         </motion.div>
 
         <div className={styles.testimonialsWrapper}>
@@ -95,7 +98,7 @@ const Testimonials = ({ showMultiple = false }) => {
             <AnimatePresence mode="wait" custom={direction}>
               {visibleTestimonials.map((testimonial, idx) => (
               <motion.div
-                  key={showMultiple ? `${currentIndex}-${idx}` : currentIndex}
+                  key={showMultiple ? `${testimonial.id}-${idx}` : testimonial.id}
                 custom={direction}
                 variants={slideVariants}
                 initial="enter"
@@ -105,6 +108,11 @@ const Testimonials = ({ showMultiple = false }) => {
                 className={styles.testimonialCard}
               >
                   <div className={styles.quoteMark}>"</div>
+                  <div className={styles.starsContainer}>
+                    {[...Array(5)].map((_, i) => (
+                      <FaStar key={i} className={styles.star} />
+                    ))}
+                  </div>
                   <p className={styles.testimonialText}>{testimonial.text}</p>
                   <div className={styles.divider}></div>
                   <div className={styles.testimonialFooter}>
@@ -113,12 +121,15 @@ const Testimonials = ({ showMultiple = false }) => {
                         <img
                           src={testimonial.image}
                           alt={testimonial.name}
-                    loading="lazy"
-                  />
+                          loading="lazy"
+                        />
                       </div>
                     )}
-                    <p className={styles.customerName}>{testimonial.name}</p>
-                </div>
+                    <div className={styles.customerInfo}>
+                      <p className={styles.customerName}>{testimonial.name}</p>
+                      <p className={styles.customerRole}>عميل راضٍ</p>
+                    </div>
+                  </div>
               </motion.div>
               ))}
             </AnimatePresence>
