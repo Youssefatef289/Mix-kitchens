@@ -39,26 +39,27 @@
 
 .tvRoomCard {
   position: relative;
-  border-radius: 12px;
+  border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
   transition: all 0.3s ease;
-  background-color: var(--color-white);
+  /* background-color: var(--color-white); */
   display: flex;
   flex-direction: column;
 }
 
 .tvRoomCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); */
 }
 
 .tvRoomImageWrapper {
   position: relative;
   width: 100%;
+  height: 450px;
   padding-top: 75%;
   overflow: hidden;
-  background-color: var(--color-dark-gray);
+  /* background-color: var(--color-dark-gray); */
   cursor: pointer;
 }
 
@@ -82,7 +83,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(26, 26, 26, 0.4);
+  /* background: rgba(26, 26, 26, 0.4); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,11 +97,11 @@
 
 .tvRoomInfo {
   padding: 1.5rem;
-  background-color: var(--color-white);
+  /* background-color: var(--color-white); */
 }
 
 .tvRoomTitle {
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
   font-size: 1.25rem;
   font-weight: 700;
   margin: 0;
@@ -119,7 +120,7 @@
   transform: translate(-50%, -50%);
   width: 60px;
   height: 60px;
-  background-color: var(--color-secondary);
+  background-color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;

@@ -125,10 +125,10 @@ const ContactPage = () => {
             {/* Contact Info */}
             <motion.div
               className={styles.contactInfo}
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
             >
               <h2 className={styles.infoTitle}>{t.contact.contactInfo}</h2>
               <p className={styles.infoDescription}>
@@ -223,10 +223,10 @@ const ContactPage = () => {
             <motion.form
               className={styles.contactForm}
               onSubmit={handleSubmit}
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
             >
               <h2 className={styles.formTitle}>{t.contact.sendMessage}</h2>
               

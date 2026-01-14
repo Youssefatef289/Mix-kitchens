@@ -153,20 +153,20 @@ const Videos = ({ showAll = false }) => {
       <section id="videos" className={styles.videos}>
         <div className={styles.container}>
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
           >
             <h2 className={styles.sectionTitle}>{t.videos.title}</h2>
           </motion.div>
 
           <motion.div
             className={styles.videoArticleContainer}
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
           >
             <div className={styles.videoWrapper}>
               <motion.div

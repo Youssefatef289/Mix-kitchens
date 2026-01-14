@@ -32,10 +32,10 @@ const DressingRoom = () => {
     <section id="dressing-room" className={styles.dressingRoom}>
       <div className={styles.container}>
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
         >
           <h2 className={styles.sectionTitle}>{t.dressingRoom.title}</h2>
           <p className={styles.sectionSubtitle}>
@@ -45,18 +45,18 @@ const DressingRoom = () => {
 
         <motion.div
           className={styles.videoArticleContainer}
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.2, ease: 'easeOut' }}
         >
           {/* Article Section */}
           <div className={styles.articleWrapper}>
             <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              transition={{ duration: 0.6, delay: 0.3, ease: 'easeOut' }}
             >
               <h3 className={styles.articleTitle}>{t.dressingRoom.articleTitle}</h3>
               <div className={styles.articleContent}>

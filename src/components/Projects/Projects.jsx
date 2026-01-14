@@ -33,7 +33,7 @@ const Projects = () => {
     {
       id: 'tv-room',
       title: t.projects.tvRoom || 'مكتبات التلفزيون',
-      image: '/image/Tv room design/tv room design modern (1).jpeg',
+      image: '/image/Tv room design/tv room design modern (2).jpeg',
       link: '/tv-room',
       description: t.projects.tvRoomDescription || 'تصاميم عصرية لمكتبات التلفزيون'
     },
@@ -61,12 +61,14 @@ const Projects = () => {
   }
 
   const itemVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
+    hidden: { opacity: 0, y: 60, scale: 0.9 },
     visible: {
       opacity: 1,
+      y: 0,
       scale: 1,
       transition: {
-        duration: 0.5,
+        duration: 0.6,
+        ease: 'easeOut',
       },
     },
     exit: {
@@ -82,10 +84,10 @@ const Projects = () => {
     <section id="projects" className={styles.projects}>
       <div className={styles.container}>
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
         >
           <h2 className={styles.sectionTitle}>{t.projects.title}</h2>
           <p className={styles.sectionSubtitle}>

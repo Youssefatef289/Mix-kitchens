@@ -72,10 +72,10 @@ const Testimonials = ({ showMultiple = false }) => {
     <section id="testimonials" className={styles.testimonials}>
       <div className={styles.container}>
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
           className={styles.header}
         >
           <h2 className={styles.sectionTitle}>{t.testimonials.title}</h2>

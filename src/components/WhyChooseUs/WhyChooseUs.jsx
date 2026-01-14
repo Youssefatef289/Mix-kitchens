@@ -38,12 +38,13 @@ const WhyChooseUs = () => {
   }
 
   const itemVariants = {
-    hidden: { opacity: 0, x: -50 },
+    hidden: { opacity: 0, y: 60 },
     visible: {
       opacity: 1,
-      x: 0,
+      y: 0,
       transition: {
         duration: 0.6,
+        ease: 'easeOut',
       },
     },
   }
@@ -52,10 +53,10 @@ const WhyChooseUs = () => {
     <section id="why-choose-us" className={styles.whyChooseUs}>
       <div className={styles.container}>
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, ease: 'easeOut' }}
         >
           <h2 className={styles.sectionTitle}>{t.whyChooseUs.title}</h2>
           <p className={styles.sectionSubtitle}>

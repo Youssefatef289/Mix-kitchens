@@ -59,12 +59,14 @@ const TvRoomPage = () => {
   }
 
   const itemVariants = {
-    hidden: { opacity: 0, scale: 0.8 },
+    hidden: { opacity: 0, y: 60, scale: 0.9 },
     visible: {
       opacity: 1,
+      y: 0,
       scale: 1,
       transition: {
-        duration: 0.5,
+        duration: 0.6,
+        ease: 'easeOut',
       },
     },
     exit: {
@@ -88,9 +90,9 @@ const TvRoomPage = () => {
           <div className={styles.container}>
             <motion.p
               className={styles.description}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
             >
               {t.projects.tvRoomDescription || 'اكتشف مجموعتنا المتنوعة من مكتبات التلفزيون المصممة بعناية فائقة لتوفير مساحة تخزين أنيقة وعصرية. من التصاميم الكلاسيكية إلى العصرية، نضمن لك تجربة فريدة تجمع بين الجمال والوظيفية.'}
             </motion.p>
