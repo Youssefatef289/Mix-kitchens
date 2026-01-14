@@ -49,7 +49,7 @@ const WhyChooseUs = () => {
   }
 
   return (
-    <section className={styles.whyChooseUs}>
+    <section id="why-choose-us" className={styles.whyChooseUs}>
       <div className={styles.container}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}

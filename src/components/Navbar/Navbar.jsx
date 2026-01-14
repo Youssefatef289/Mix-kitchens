@@ -23,22 +23,60 @@ const Navbar = ({ isTransparent = false, hasHero = false }) => {
   }, [])
 
   const navLinks = [
-    { name: t.nav.home, path: '/' },
-    { name: t.nav.about, path: '/about' },
-    { name: t.nav.services, path: '/services' },
+    { name: t.nav.home, path: '/', hash: '#home' },
+    { name: t.nav.about, path: '/', hash: '#about' },
+    { name: t.nav.services, path: '/', hash: '#services' },
   ]
 
   const projectsDropdownItems = [
-    { name: t.nav.kitchens, path: '/projects' },
-    { name: t.nav.dressingRoom, path: '/dressing-room' },
-    { name: t.nav.tvRoom, path: '/tv-room' },
+    { name: t.nav.kitchens, path: '/', hash: '#projects' },
+    { name: t.nav.dressingRoom, path: '/', hash: '#dressing-room' },
+    { name: t.nav.tvRoom, path: '/', hash: '#projects' },
   ]
 
-  const handleLinkClick = (e, path) => {
+  const handleLinkClick = (e, path, hash = null) => {
     e.preventDefault()
-    navigate(path)
     setIsMobileMenuOpen(false)
-    window.scrollTo(0, 0)
+    
+    // If we're not on the home page, navigate to home first
+    if (window.location.pathname !== '/') {
+      navigate('/')
+      // Wait for navigation to complete, then scroll
+      setTimeout(() => {
+        if (hash) {
+          const element = document.querySelector(hash)
+          if (element) {
+            const offset = 80 // Navbar height offset
+            const elementPosition = element.getBoundingClientRect().top
+            const offsetPosition = elementPosition + window.pageYOffset - offset
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            })
+          }
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' })
+        }
+      }, 300)
+    } else {
+      // We're already on home page, just scroll
+      if (hash) {
+        setTimeout(() => {
+          const element = document.querySelector(hash)
+          if (element) {
+            const offset = 80 // Navbar height offset
+            const elementPosition = element.getBoundingClientRect().top
+            const offsetPosition = elementPosition + window.pageYOffset - offset
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            })
+          }
+        }, 50)
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }
+    }
   }
 
   // تحديد نوع Navbar بناءً على وجود Hero
@@ -74,8 +112,8 @@ const Navbar = ({ isTransparent = false, hasHero = false }) => {
           {navLinks.map((link, index) => (
             <li key={index}>
               <Link
-                to={link.path}
-                onClick={(e) => handleLinkClick(e, link.path)}
+                to={link.path + (link.hash || '')}
+                onClick={(e) => handleLinkClick(e, link.path, link.hash)}
                 className={styles.navLink}
               >
                 {link.name}
@@ -112,9 +150,9 @@ const Navbar = ({ isTransparent = false, hasHero = false }) => {
                 {projectsDropdownItems.map((item, index) => (
                   <li key={index}>
                     <Link
-                      to={item.path}
+                      to={item.path + (item.hash || '')}
                       onClick={(e) => {
-                        handleLinkClick(e, item.path)
+                        handleLinkClick(e, item.path, item.hash)
                         setIsProjectsDropdownOpen(false)
                       }}
                       className={styles.dropdownLink}
@@ -130,7 +168,12 @@ const Navbar = ({ isTransparent = false, hasHero = false }) => {
           <li>
             <Link
               to="/contact"
-              onClick={(e) => handleLinkClick(e, '/contact')}
+              onClick={(e) => {
+                e.preventDefault()
+                navigate('/contact')
+                setIsMobileMenuOpen(false)
+                window.scrollTo(0, 0)
+              }}
               className={styles.navLink}
             >
               {t.nav.contact}
@@ -185,8 +228,8 @@ const Navbar = ({ isTransparent = false, hasHero = false }) => {
           {navLinks.map((link, index) => (
             <li key={index}>
               <Link
-                to={link.path}
-                onClick={(e) => handleLinkClick(e, link.path)}
+                to={link.path + (link.hash || '')}
+                onClick={(e) => handleLinkClick(e, link.path, link.hash)}
                 className={styles.mobileNavLink}
               >
                 {link.name}
@@ -213,9 +256,9 @@ const Navbar = ({ isTransparent = false, hasHero = false }) => {
                 {projectsDropdownItems.map((item, index) => (
                   <li key={index}>
                     <Link
-                      to={item.path}
+                      to={item.path + (item.hash || '')}
                       onClick={(e) => {
-                        handleLinkClick(e, item.path)
+                        handleLinkClick(e, item.path, item.hash)
                         setIsProjectsDropdownOpen(false)
                       }}
                       className={styles.mobileDropdownLink}
@@ -231,7 +274,12 @@ const Navbar = ({ isTransparent = false, hasHero = false }) => {
           <li>
             <Link
               to="/contact"
-              onClick={(e) => handleLinkClick(e, '/contact')}
+              onClick={(e) => {
+                e.preventDefault()
+                navigate('/contact')
+                setIsMobileMenuOpen(false)
+                window.scrollTo(0, 0)
+              }}
               className={styles.mobileNavLink}
             >
               {t.nav.contact}
