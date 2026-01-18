@@ -57,8 +57,8 @@ const ContactPage = () => {
     {
       icon: FaEnvelope,
       title: t.contact.email,
-      value: 'ahmeddreda1994@gmail.com',
-      link: 'mailto:ahmeddreda1994@gmail.com',
+      value: 'mixkitchen171@gmail.com',
+      link: 'mailto:mixkitchen171@gmail.com',
     },
     {
       icon: FaPhone,

@@ -119,7 +119,7 @@ const Footer = () => {
                 <span className={styles.contactIcon}>
                   <FaEnvelope />
                 </span>
-                <a href="mailto:ahmeddreda1994@gmail.com" className={styles.contactLink}>ahmeddreda1994@gmail.com</a>
+                <a href="mailto:mixkitchen171@gmail.com" className={styles.contactLink}>mixkitchen171@gmail.com</a>
               </li>
             </ul>
           </motion.div>
