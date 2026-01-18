@@ -106,6 +106,8 @@ const Footer = () => {
                   <FaPhone />
                 </span>
                 <a href="tel:01008705606" className={styles.contactLink}>01008705606</a>
+                {' / '}
+                <a href="tel:01070881741" className={styles.contactLink}>01070881741</a>
               </li>
               <li>
                 <span className={styles.contactIcon}>
@@ -188,7 +190,7 @@ const Footer = () => {
                 <span className={styles.contactIcon}>
                   <FaPhone />
                 </span>
-                <span>{t.footer.showroomPhone}</span>
+                <span>{t.footer.showroomPhone} / 01070881743</span>
               </li>
             </ul>
           </motion.div>
